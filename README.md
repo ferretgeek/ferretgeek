@@ -20,6 +20,9 @@
 
 ### 01 · [CPA-X](https://github.com/ferretgeek/CPA-X)
 
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/CPA-X?style=flat-square&label=Stars)](https://github.com/ferretgeek/CPA-X/stargazers)
+[![Latest release](https://img.shields.io/github/v/release/ferretgeek/CPA-X?style=flat-square&label=Release)](https://github.com/ferretgeek/CPA-X/releases/latest)
+
 <a href="https://github.com/ferretgeek/CPA-X">
   <img src="./assets/projects/cpa-x.png" alt="CPA-X CLIProxyAPI 管理面板预览 / CPA-X CLIProxyAPI admin panel preview" width="100%" />
 </a>
@@ -39,6 +42,9 @@
 ---
 
 ### 02 · [Codex Orbit](https://github.com/ferretgeek/CodexOrbit)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/CodexOrbit?style=flat-square&label=Stars)](https://github.com/ferretgeek/CodexOrbit/stargazers)
+[![Latest release](https://img.shields.io/github/v/release/ferretgeek/CodexOrbit?style=flat-square&label=Release)](https://github.com/ferretgeek/CodexOrbit/releases/latest)
 
 <a href="https://github.com/ferretgeek/CodexOrbit">
   <img src="./assets/projects/codex-orbit.png" alt="Codex Orbit 桌面额度悬浮窗预览 / Codex Orbit desktop quota widget preview" width="100%" />
@@ -60,6 +66,9 @@
 
 ### 03 · [Codex Quota Overview](https://github.com/ferretgeek/codex-quota-overview)
 
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/codex-quota-overview?style=flat-square&label=Stars)](https://github.com/ferretgeek/codex-quota-overview/stargazers)
+[![Latest release](https://img.shields.io/github/v/release/ferretgeek/codex-quota-overview?style=flat-square&label=Release)](https://github.com/ferretgeek/codex-quota-overview/releases/latest)
+
 <a href="https://github.com/ferretgeek/codex-quota-overview">
   <img src="./assets/projects/codex-quota-overview.png" alt="Codex 额度总览批量扫描面板预览 / Codex Quota Overview bulk scanning dashboard preview" width="100%" />
 </a>
@@ -75,6 +84,18 @@
 **技术 / Stack** — `Go` · `React` · `TypeScript` · `Vite`
 
 [项目 / Repository](https://github.com/ferretgeek/codex-quota-overview) · [下载 / Releases](https://github.com/ferretgeek/codex-quota-overview/releases/latest) · [使用说明 / Guide](https://github.com/ferretgeek/codex-quota-overview/blob/main/README.md) · [反馈 / Issues](https://github.com/ferretgeek/codex-quota-overview/issues)
+
+---
+
+## 能力地图 / Capability map
+
+<p align="center">
+  <img src="./assets/capability-map.png" alt="Ferret 产品、全栈、桌面、运维与交付能力地图 / Ferret product, full-stack, desktop, operations, and delivery capability map" width="100%" />
+</p>
+
+三个项目覆盖了从产品梳理、界面设计、全栈与 Windows 桌面开发，到部署、更新、验证、发布和 AI Agent 文档的完整链路。
+
+Together, the three projects demonstrate an end-to-end product path—from product framing, interface design, full-stack and Windows desktop development to deployment, safe updates, verification, releases, and agent-ready documentation.
 
 ---
 
