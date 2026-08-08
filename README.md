@@ -285,6 +285,26 @@
 
 ---
 
+### 15 · [信灯 / Mail Lantern](https://github.com/ferretgeek/MailLantern)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/MailLantern?style=flat-square&label=Stars)](https://github.com/ferretgeek/MailLantern/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/MailLantern/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/MailLantern/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/ferretgeek/MailLantern?style=flat-square&label=Release)](https://github.com/ferretgeek/MailLantern/releases/latest)
+
+<a href="https://github.com/ferretgeek/MailLantern">
+  <img src="./assets/projects/mail-lantern.png" alt="信灯 iCloud 验证码查找工具预览 / Mail Lantern iCloud verification-code finder preview" width="100%" />
+</a>
+
+**在漫长的收件箱里，替那串稍纵即逝的数字点一盏灯。** 只读、短暂，也只留在自己的设备上。
+
+*Light the way to a fleeting code in a long inbox—read-only, temporary, and kept on your own device.*
+
+**看点 / Focus** — 官方 iCloud IMAP / official iCloud IMAP · 密码仅驻留内存 / memory-only password · 本地与服务器 / local and server · 四套主题 / four themes · **技术 / Stack** — `Python stdlib` · `JavaScript` · `Docker`
+
+[项目 / Repository](https://github.com/ferretgeek/MailLantern) · [English](https://github.com/ferretgeek/MailLantern/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/MailLantern/blob/main/docs/DEPLOYMENT.md)
+
+---
+
 ## 能力地图 / Capability map
 
 <p align="center">
@@ -316,7 +336,7 @@
 
 问题、想法与合作，欢迎来到对应项目的 Issues 或 Discussions。 / *Ideas and collaboration are welcome in each project's Issues or Discussions.*
 
-<sub>Codex Orbit、Codex Quota Overview 与 Credential Compass 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。InboxHarbor 与 Veil Garden 分别是独立项目，与 Microsoft 或 Apple 没有隶属或背书关系。 / The Codex projects are unofficial and do not bypass usage limits. The Palworld projects are not affiliated with or endorsed by Pocketpair. InboxHarbor and Veil Garden are independent projects, not affiliated with or endorsed by Microsoft or Apple.</sub>
+<sub>Codex Orbit、Codex Quota Overview 与 Credential Compass 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。InboxHarbor、Veil Garden 与 Mail Lantern 均为独立项目，与 Microsoft 或 Apple 没有隶属或背书关系。 / The Codex projects are unofficial and do not bypass usage limits. The Palworld projects are not affiliated with or endorsed by Pocketpair. InboxHarbor, Veil Garden, and Mail Lantern are independent projects, not affiliated with or endorsed by Microsoft or Apple.</sub>
 
 <p align="center">
   <strong>Open source should make difficult work feel possible.</strong><br />
