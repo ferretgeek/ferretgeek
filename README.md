@@ -189,6 +189,25 @@
 
 ---
 
+### 10 · [信渡 / Mail Ferry](https://github.com/ferretgeek/MailFerry)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/MailFerry?style=flat-square&label=Stars)](https://github.com/ferretgeek/MailFerry/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/MailFerry/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/MailFerry/actions/workflows/ci.yml)
+
+<a href="https://github.com/ferretgeek/MailFerry">
+  <img src="./assets/projects/mail-ferry.png" alt="信渡自托管邮件取件界面预览 / Mail Ferry self-hosted mail pickup preview" width="100%" />
+</a>
+
+**让每一封来信，都抵达它该去的地方。** 把 IMAP 邮箱化成独立、可撤销的取件链接，在自己的设备上安静流转。
+
+*Let every message arrive where it belongs—through private, revocable pickup links hosted on your own machine.*
+
+**看点 / Focus** — 独立取件链接 / revocable pickup links · 缓存与降级读取 / resilient cache · 本地与服务器 / local and server · **技术 / Stack** — `Python stdlib` · `IMAP` · `SQLite` · `systemd`
+
+[项目 / Repository](https://github.com/ferretgeek/MailFerry) · [English](https://github.com/ferretgeek/MailFerry/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/MailFerry/blob/main/docs/%E9%83%A8%E7%BD%B2%E8%AF%B4%E6%98%8E.md)
+
+---
+
 ## 能力地图 / Capability map
 
 <p align="center">

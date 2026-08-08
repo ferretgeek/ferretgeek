@@ -60,7 +60,7 @@
     <text x="896" y="326" fill="#cbd5e1" font-size="17">健康检查、回滚与可执行文档</text>
     <text x="896" y="354" fill="#8296aa" font-size="15">Health checks, rollback &amp; agent-ready docs</text>
     <rect x="896" y="393" width="208" height="34" rx="9" fill="#2a2341"/>
-    <text x="912" y="416" fill="#e9d5ff" font-size="14" font-weight="650">ALL THREE PRODUCTS</text>
+    <text x="912" y="416" fill="#e9d5ff" font-size="14" font-weight="650">ALL PUBLIC PRODUCTS</text>
 
     <path d="M82 522H1198" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
     <g fill="#e2e8f0" font-size="14" font-weight="650" text-anchor="middle">
