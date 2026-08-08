@@ -305,6 +305,26 @@
 
 ---
 
+### 16 · [卷语 / VaultMuse](https://github.com/ferretgeek/VaultMuse)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/VaultMuse?style=flat-square&label=Stars)](https://github.com/ferretgeek/VaultMuse/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/VaultMuse/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/VaultMuse/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/ferretgeek/VaultMuse?style=flat-square&label=Release)](https://github.com/ferretgeek/VaultMuse/releases/latest)
+
+<a href="https://github.com/ferretgeek/VaultMuse">
+  <img src="./assets/projects/vault-muse.png" alt="卷语 Obsidian AI 对话与写作伴侣预览 / VaultMuse Obsidian AI conversation and writing companion preview" width="100%" />
+</a>
+
+**让 AI 靠近笔记，却不越过你画下的边界。** 看见上下文，审阅每一次写回，把思考的主动权留在自己手里。
+
+*Let AI come close to your notes without crossing the line you draw—visible context, reviewable edits, and agency kept in your hands.*
+
+**看点 / Focus** — 显式上下文 / explicit context · 审阅后写回 / guarded note editing · 内存敏感配置 / memory-only secrets · 四套主题 / four themes · **技术 / Stack** — `TypeScript` · `Obsidian API` · `Node.js`
+
+[项目 / Repository](https://github.com/ferretgeek/VaultMuse) · [在线演示 / Live demo](https://ferretgeek.github.io/VaultMuse/) · [English](https://github.com/ferretgeek/VaultMuse/blob/main/README_EN.md)
+
+---
+
 ## 能力地图 / Capability map
 
 <p align="center">
