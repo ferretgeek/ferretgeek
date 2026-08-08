@@ -345,6 +345,26 @@
 
 ---
 
+### 18 · [光谱测速台 / SpectrumBench](https://github.com/ferretgeek/SpectrumBench)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/SpectrumBench?style=flat-square&label=Stars)](https://github.com/ferretgeek/SpectrumBench/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/SpectrumBench/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/SpectrumBench/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/ferretgeek/SpectrumBench?style=flat-square&label=Release)](https://github.com/ferretgeek/SpectrumBench/releases/latest)
+
+<a href="https://github.com/ferretgeek/SpectrumBench">
+  <img src="./assets/projects/spectrum-bench.png" alt="光谱测速台 Responses API 性能工作台预览 / SpectrumBench Responses API performance workbench preview" width="100%" />
+</a>
+
+**把每一次响应的速度，摊成一束能够复核的光谱。** 不追逐单个漂亮数字，让首 Token、输出节奏与成本在同一张安静的桌面上彼此印证。
+
+*Turn every response into a spectrum you can inspect—time to first token, output rhythm, and cost held together instead of reduced to one flattering number.*
+
+**看点 / Focus** — 三种可复现实验 / three reproducible modes · 内存凭据与脱敏报告 / memory-only credentials and redacted reports · 四套全局主题 / four themes · **技术 / Stack** — `Python` · `FastAPI` · `WebSocket` · `Docker`
+
+[项目 / Repository](https://github.com/ferretgeek/SpectrumBench) · [在线演示 / Live demo](https://ferretgeek.github.io/SpectrumBench/) · [测量方法 / Methodology](https://github.com/ferretgeek/SpectrumBench/blob/main/docs/%E6%B5%8B%E9%87%8F%E6%96%B9%E6%B3%95.md)
+
+---
+
 ## 能力地图 / Capability map
 
 <p align="center">
@@ -376,7 +396,7 @@
 
 问题、想法与合作，欢迎来到对应项目的 Issues 或 Discussions。 / *Ideas and collaboration are welcome in each project's Issues or Discussions.*
 
-<sub>Codex Orbit、Codex Quota Overview 与 Credential Compass 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。InboxHarbor、TokenLoom、Veil Garden 与 Mail Lantern 均为独立项目，与 Microsoft 或 Apple 没有隶属或背书关系。 / The Codex projects are unofficial and do not bypass usage limits. The Palworld projects are not affiliated with or endorsed by Pocketpair. InboxHarbor, TokenLoom, Veil Garden, and Mail Lantern are independent projects, not affiliated with or endorsed by Microsoft or Apple.</sub>
+<sub>Codex Orbit、Codex Quota Overview、Credential Compass 与 SpectrumBench 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。InboxHarbor、TokenLoom、Veil Garden 与 Mail Lantern 均为独立项目，与 Microsoft 或 Apple 没有隶属或背书关系。 / The Codex and SpectrumBench projects are unofficial and do not bypass usage limits. The Palworld projects are not affiliated with or endorsed by Pocketpair. InboxHarbor, TokenLoom, Veil Garden, and Mail Lantern are independent projects, not affiliated with or endorsed by Microsoft or Apple.</sub>
 
 <p align="center">
   <strong>Open source should make difficult work feel possible.</strong><br />
