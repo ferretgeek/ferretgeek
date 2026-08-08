@@ -87,15 +87,61 @@
 
 ---
 
+### 04 · [LanPlay](https://github.com/ferretgeek/LanPlay)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/LanPlay?style=flat-square&label=Stars)](https://github.com/ferretgeek/LanPlay/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/LanPlay/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/LanPlay/actions/workflows/ci.yml)
+
+<a href="https://github.com/ferretgeek/LanPlay">
+  <img src="./assets/projects/lanplay.png" alt="LanPlay 局域网 SMB 播放器预览 / LanPlay local-network SMB media player preview" width="100%" />
+</a>
+
+**把 SMB 共享变成 Android 里的本地私人影院。** LanPlay 直接浏览和播放局域网媒体，把字幕、音轨、续播、历史、标签和备份放进同一个原生应用，不要求账号或云端媒体库。
+
+**Turn an SMB share into a private local cinema on Android.** LanPlay browses and plays media directly over the local network, combining subtitles, audio tracks, resume state, history, tags, and backups without requiring an account or cloud library.
+
+- **原生 SMB 工作流 / Native SMB workflow** — 局域网发现、访客或账号连接、目录浏览、搜索和排序。<br />Discover shares, connect as a guest or user, then browse, search, and sort folders.
+- **兼容播放 / Resilient playback** — Media3 主内核配合 libVLC 回退，支持硬解、倍速、画面适配及外挂字幕。<br />Use Media3 by default with libVLC fallback, hardware decoding, speed controls, scaling, and external subtitles.
+- **隐私优先 / Privacy first** — 无账号、云同步或遥测；凭据仅在设备本地加密保存，公开预览全部匿名。<br />No account, cloud sync, or telemetry; credentials stay encrypted on-device and every public preview is anonymous.
+
+**技术 / Stack** — `Kotlin` · `Jetpack Compose` · `Media3` · `libVLC` · `SMBJ` · `Python`
+
+[项目 / Repository](https://github.com/ferretgeek/LanPlay) · [使用说明 / Guide](https://github.com/ferretgeek/LanPlay/blob/main/README.md) · [安全 / Security](https://github.com/ferretgeek/LanPlay/security) · [讨论 / Discussions](https://github.com/ferretgeek/LanPlay/discussions)
+
+---
+
+### 05 · [Vibe Prompt Recorder](https://github.com/ferretgeek/VibePromptRecorder)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/VibePromptRecorder?style=flat-square&label=Stars)](https://github.com/ferretgeek/VibePromptRecorder/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/VibePromptRecorder/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/VibePromptRecorder/actions/workflows/ci.yml)
+
+<a href="https://github.com/ferretgeek/VibePromptRecorder">
+  <img src="./assets/projects/vibe-prompt-recorder.png" alt="Vibe Prompt Recorder 本地提示词时间线预览 / Vibe Prompt Recorder local prompt timeline preview" width="100%" />
+</a>
+
+**把每一轮提示词，留在自己的本地时间线。** 这是一个离线 Windows 提示词工作台，用项目、草稿、轮次、搜索和 Markdown 编辑整理 Vibe Coding 过程，不接入模型 API，也不会上传内容。
+
+**Keep every prompt iteration in your own local timeline.** This offline Windows workspace organizes Vibe Coding with projects, drafts, iterations, search, and Markdown editing—without calling a model API or uploading content.
+
+- **轮次工作流 / Iteration workflow** — 草稿自动保存，一键完成当前轮并继续下一轮，完整上下文始终可回看。<br />Autosave drafts, complete the current iteration, and continue while keeping the full context available.
+- **可靠本地数据 / Reliable local data** — SQLite WAL、原子写入、关闭保护、冲突处理、备份恢复和目录迁移。<br />Protect local work with SQLite WAL, atomic writes, close guards, conflict handling, backup, restore, and migration.
+- **双模式编辑 / Two editing modes** — 所见即所得与 Markdown 源码模式，配合代码高亮、安全预览和全局搜索。<br />Switch between WYSIWYG and Markdown source with syntax highlighting, sanitized previews, and global search.
+
+**技术 / Stack** — `Tauri 2` · `Rust` · `React` · `TypeScript` · `SQLite` · `Vite`
+
+[项目 / Repository](https://github.com/ferretgeek/VibePromptRecorder) · [使用说明 / Guide](https://github.com/ferretgeek/VibePromptRecorder/blob/main/README.md) · [安全 / Security](https://github.com/ferretgeek/VibePromptRecorder/security) · [讨论 / Discussions](https://github.com/ferretgeek/VibePromptRecorder/discussions)
+
+---
+
 ## 能力地图 / Capability map
 
 <p align="center">
   <img src="./assets/capability-map.png" alt="Ferret 产品、全栈、桌面、运维与交付能力地图 / Ferret product, full-stack, desktop, operations, and delivery capability map" width="100%" />
 </p>
 
-三个项目覆盖了从产品梳理、界面设计、全栈与 Windows 桌面开发，到部署、更新、验证、发布和 AI Agent 文档的完整链路。
+五个项目覆盖了从产品梳理、界面设计、全栈、Android 与 Windows 桌面开发，到局域网媒体、可靠本地数据、部署、更新、验证、发布和 AI Agent 文档的完整链路。
 
-Together, the three projects demonstrate an end-to-end product path—from product framing, interface design, full-stack and Windows desktop development to deployment, safe updates, verification, releases, and agent-ready documentation.
+Together, the five projects demonstrate an end-to-end product path—from product framing, interface design, full-stack, Android, and Windows desktop development to local-network media, reliable local data, deployment, safe updates, verification, releases, and agent-ready documentation.
 
 ---
 
@@ -110,6 +156,9 @@ Together, the three projects demonstrate an end-to-end product path—from produ
   <img src="https://img.shields.io/badge/Go-075985?style=flat-square&logo=go&logoColor=white" alt="Go" />
   <img src="https://img.shields.io/badge/TypeScript-1D4ED8?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/React-0F172A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin" />
+  <img src="https://img.shields.io/badge/Rust-7C2D12?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/Tauri-1F2937?style=flat-square&logo=tauri&logoColor=24C8DB" alt="Tauri" />
   <img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET" />
   <img src="https://img.shields.io/badge/Docker-1E40AF?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/GitHub_Actions-1F2937?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
