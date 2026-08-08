@@ -113,6 +113,63 @@
 
 ---
 
+### 06 · [Palworld Ops](https://github.com/ferretgeek/PalworldOps)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/PalworldOps?style=flat-square&label=Stars)](https://github.com/ferretgeek/PalworldOps/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/PalworldOps/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/PalworldOps/actions/workflows/ci.yml)
+
+<a href="https://github.com/ferretgeek/PalworldOps">
+  <img src="./assets/projects/palworld-ops.png" alt="Palworld Ops 服务端管理面板预览 / Palworld Ops server dashboard preview" width="100%" />
+</a>
+
+**让一台小小的服务器，也有被认真照看的日常。** 状态、性能、备份与世界设置，都收进一张清楚的管理页。
+
+*Give a small server the calm, careful routine it deserves—health, performance, backups, and world settings in one view.*
+
+**看点 / Focus** — 安全运维 / guarded operations · 可验证备份 / verified backups · systemd 自动化 / automation · **技术 / Stack** — `Python` · `JavaScript` · `SQLite` · `systemd`
+
+[项目 / Repository](https://github.com/ferretgeek/PalworldOps) · [使用说明 / Guide](https://github.com/ferretgeek/PalworldOps/blob/main/README.md) · [讨论 / Discussions](https://github.com/ferretgeek/PalworldOps/discussions)
+
+---
+
+### 07 · [帕鲁配种图鉴 / Palworld Breeding Atlas](https://github.com/ferretgeek/PalworldBreedingAtlas)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/PalworldBreedingAtlas?style=flat-square&label=Stars)](https://github.com/ferretgeek/PalworldBreedingAtlas/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/PalworldBreedingAtlas/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/PalworldBreedingAtlas/actions/workflows/ci.yml)
+
+<a href="https://github.com/ferretgeek/PalworldBreedingAtlas">
+  <img src="./assets/projects/palworld-breeding-atlas.png" alt="帕鲁配种图鉴预览 / Palworld Breeding Atlas preview" width="100%" />
+</a>
+
+**把几万条关系，梳成一条真正走得通的路。** 287 条图鉴、配种规划与只读存档，都留在本地。
+
+*Turn thousands of relationships into a path you can actually follow—with a 287-entry atlas, planning, and read-only saves.*
+
+**看点 / Focus** — 路线规划 / route planning · 反向发现 / reverse discovery · 本地、无遥测 / local, no telemetry · **技术 / Stack** — `Python` · `Tkinter` · `HTML` · `JavaScript`
+
+[项目 / Repository](https://github.com/ferretgeek/PalworldBreedingAtlas) · [使用说明 / Guide](https://github.com/ferretgeek/PalworldBreedingAtlas/blob/main/README.md) · [数据说明 / Data](https://github.com/ferretgeek/PalworldBreedingAtlas/blob/main/docs/%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%9B%B4%E6%96%B0.md)
+
+---
+
+### 08 · [Ferret Mail](https://github.com/ferretgeek/FerretMail)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/FerretMail?style=flat-square&label=Stars)](https://github.com/ferretgeek/FerretMail/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/FerretMail/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/FerretMail/actions/workflows/ci.yml)
+
+<a href="https://github.com/ferretgeek/FerretMail">
+  <img src="./assets/projects/ferret-mail.png" alt="Ferret Mail 域名收件箱预览 / Ferret Mail domain inbox preview" width="100%" />
+</a>
+
+**给自己的域名，留一间接住消息的房间。** SMTP、网页后台与 API，轻巧地住在一份 Python 文件里。
+
+*Give your domain a quiet room built simply to receive—SMTP, a web dashboard, and an API in one Python file.*
+
+**看点 / Focus** — 多域名收件 / multi-domain inbox · 验证码与附件 / codes and attachments · 备份与限流 / backup and rate limits · **技术 / Stack** — `Python stdlib` · `SMTP` · `SQLite`
+
+[项目 / Repository](https://github.com/ferretgeek/FerretMail) · [部署 / Deploy](https://github.com/ferretgeek/FerretMail/blob/main/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B.md) · [API / Docs](https://github.com/ferretgeek/FerretMail/blob/main/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3.md)
+
+---
+
 ## 能力地图 / Capability map
 
 <p align="center">
@@ -144,7 +201,7 @@
 
 问题、想法与合作，欢迎来到对应项目的 Issues 或 Discussions。 / *Ideas and collaboration are welcome in each project's Issues or Discussions.*
 
-<sub>Codex Orbit 与 Codex Quota Overview 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。 / Codex Orbit and Codex Quota Overview are unofficial community projects with no affiliation with or endorsement by OpenAI, and they do not bypass usage limits.</sub>
+<sub>Codex Orbit 与 Codex Quota Overview 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。 / The Codex projects are unofficial and do not bypass usage limits. The Palworld projects are also unofficial and are not affiliated with or endorsed by Pocketpair.</sub>
 
 <p align="center">
   <strong>Open source should make difficult work feel possible.</strong><br />
