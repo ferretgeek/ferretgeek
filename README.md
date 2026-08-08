@@ -325,6 +325,26 @@
 
 ---
 
+### 17 · [令牌织机 / TokenLoom](https://github.com/ferretgeek/TokenLoom)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/TokenLoom?style=flat-square&label=Stars)](https://github.com/ferretgeek/TokenLoom/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/TokenLoom/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/TokenLoom/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/ferretgeek/TokenLoom?style=flat-square&label=Release)](https://github.com/ferretgeek/TokenLoom/releases/latest)
+
+<a href="https://github.com/ferretgeek/TokenLoom">
+  <img src="./assets/projects/token-loom.png" alt="令牌织机 Outlook 授权令牌续期台预览 / TokenLoom authorized Outlook token renewal console preview" width="100%" />
+</a>
+
+**把令牌的续期，织成一张安静而清楚的时间表。** 看见节奏、异常与边界，让敏感数据始终留在遮罩之后。
+
+*A calm, visible rhythm for authorized token renewal—bounded work, masked data, and no hidden upstream.*
+
+**看点 / Focus** — 持久任务 / durable jobs · 字段加密 / field encryption · 只读体检 / read-only health checks · 四套主题 / four themes · **技术 / Stack** — `Python` · `FastAPI` · `PostgreSQL` · `Docker`
+
+[项目 / Repository](https://github.com/ferretgeek/TokenLoom) · [在线演示 / Live demo](https://ferretgeek.github.io/TokenLoom/) · [English](https://github.com/ferretgeek/TokenLoom/blob/main/README_EN.md)
+
+---
+
 ## 能力地图 / Capability map
 
 <p align="center">
@@ -356,7 +376,7 @@
 
 问题、想法与合作，欢迎来到对应项目的 Issues 或 Discussions。 / *Ideas and collaboration are welcome in each project's Issues or Discussions.*
 
-<sub>Codex Orbit、Codex Quota Overview 与 Credential Compass 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。InboxHarbor、Veil Garden 与 Mail Lantern 均为独立项目，与 Microsoft 或 Apple 没有隶属或背书关系。 / The Codex projects are unofficial and do not bypass usage limits. The Palworld projects are not affiliated with or endorsed by Pocketpair. InboxHarbor, Veil Garden, and Mail Lantern are independent projects, not affiliated with or endorsed by Microsoft or Apple.</sub>
+<sub>Codex Orbit、Codex Quota Overview 与 Credential Compass 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。InboxHarbor、TokenLoom、Veil Garden 与 Mail Lantern 均为独立项目，与 Microsoft 或 Apple 没有隶属或背书关系。 / The Codex projects are unofficial and do not bypass usage limits. The Palworld projects are not affiliated with or endorsed by Pocketpair. InboxHarbor, TokenLoom, Veil Garden, and Mail Lantern are independent projects, not affiliated with or endorsed by Microsoft or Apple.</sub>
 
 <p align="center">
   <strong>Open source should make difficult work feel possible.</strong><br />
