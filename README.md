@@ -170,6 +170,25 @@
 
 ---
 
+### 09 · [航迹 / Trailmark](https://github.com/ferretgeek/Trailmark)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/Trailmark?style=flat-square&label=Stars)](https://github.com/ferretgeek/Trailmark/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/Trailmark/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/Trailmark/actions/workflows/ci.yml)
+
+<a href="https://github.com/ferretgeek/Trailmark">
+  <img src="./assets/projects/trailmark.png" alt="航迹节点观测面板预览 / Trailmark node observability dashboard preview" width="100%" />
+</a>
+
+**每一次连通，都该有一段能够解释的旅程。** 航迹让节点穿过真实代理通道，告诉你哪里慢、哪里断，什么依然可用。
+
+*Every connection deserves an explainable journey—through a real proxy path, from DNS to the page that finally answers.*
+
+**看点 / Focus** — 真实链路检测 / real-path probes · DNS、TCP、TLS 与页面特征 / layered diagnostics · 本地与服务器 / local and server · **技术 / Stack** — `Python` · `FastAPI` · `SQLite` · `sing-box`
+
+[项目 / Repository](https://github.com/ferretgeek/Trailmark) · [English](https://github.com/ferretgeek/Trailmark/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/Trailmark/blob/main/docs/%E9%83%A8%E7%BD%B2%E4%B8%8E%E8%BF%90%E7%BB%B4.md)
+
+---
+
 ## 能力地图 / Capability map
 
 <p align="center">
