@@ -265,6 +265,25 @@
 
 ---
 
+### 14 · [隐邮花园 / Veil Garden](https://github.com/ferretgeek/VeilGarden)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/VeilGarden?style=flat-square&label=Stars)](https://github.com/ferretgeek/VeilGarden/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/VeilGarden/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/VeilGarden/actions/workflows/ci.yml)
+
+<a href="https://github.com/ferretgeek/VeilGarden">
+  <img src="./assets/projects/veil-garden.png" alt="隐邮花园本地优先隐私地址花园预览 / Veil Garden local-first private address garden preview" width="100%" />
+</a>
+
+**把替你挡住身份的地址，种进自己的花园。** 不接管 Apple 账户，只在自己的设备上整理、遮罩与带走地址。
+
+*Tend every address that stands between your identity and the world—in a garden that stays yours.*
+
+**看点 / Focus** — 默认遮罩 / masked by default · 本地导入与备份 / local import and backup · 四套全局主题 / four themes · **技术 / Stack** — `Python stdlib` · `JavaScript` · `SQLite` · `Docker`
+
+[项目 / Repository](https://github.com/ferretgeek/VeilGarden) · [English](https://github.com/ferretgeek/VeilGarden/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/VeilGarden/blob/main/docs/DEPLOYMENT.md)
+
+---
+
 ## 能力地图 / Capability map
 
 <p align="center">
@@ -296,7 +315,7 @@
 
 问题、想法与合作，欢迎来到对应项目的 Issues 或 Discussions。 / *Ideas and collaboration are welcome in each project's Issues or Discussions.*
 
-<sub>Codex Orbit、Codex Quota Overview 与 Credential Compass 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。InboxHarbor 是独立开源项目，与 Microsoft 没有隶属或背书关系。 / The Codex projects are unofficial and do not bypass usage limits. The Palworld projects are not affiliated with or endorsed by Pocketpair. InboxHarbor is independent and is not affiliated with or endorsed by Microsoft.</sub>
+<sub>Codex Orbit、Codex Quota Overview 与 Credential Compass 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。InboxHarbor 与 Veil Garden 分别是独立项目，与 Microsoft 或 Apple 没有隶属或背书关系。 / The Codex projects are unofficial and do not bypass usage limits. The Palworld projects are not affiliated with or endorsed by Pocketpair. InboxHarbor and Veil Garden are independent projects, not affiliated with or endorsed by Microsoft or Apple.</sub>
 
 <p align="center">
   <strong>Open source should make difficult work feel possible.</strong><br />
