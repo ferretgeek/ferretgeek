@@ -246,6 +246,25 @@
 
 ---
 
+### 13 · [凭证罗盘 / Credential Compass](https://github.com/ferretgeek/CredentialCompass)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/CredentialCompass?style=flat-square&label=Stars)](https://github.com/ferretgeek/CredentialCompass/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/CredentialCompass/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/CredentialCompass/actions/workflows/ci.yml)
+
+<a href="https://github.com/ferretgeek/CredentialCompass">
+  <img src="./assets/projects/credential-compass.png" alt="凭证罗盘 CLIProxyAPI 凭证池健康工作台预览 / Credential Compass credential-pool health workbench preview" width="100%" />
+</a>
+
+**让散落的凭证，回到一张清楚的航图。** 只看健康信号与额度轮廓，秘密始终停在边界之内。
+
+*Bring scattered credentials back onto one clear chart—health signals in view, secrets kept behind the boundary.*
+
+**看点 / Focus** — 默认只读 / read-only by default · 账号遮罩 / masked identities · 可逆状态控制 / reversible controls · 四套全局主题 / four themes · **技术 / Stack** — `Python stdlib` · `JavaScript` · `Docker`
+
+[项目 / Repository](https://github.com/ferretgeek/CredentialCompass) · [English](https://github.com/ferretgeek/CredentialCompass/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/CredentialCompass/blob/main/docs/DEPLOYMENT.md)
+
+---
+
 ## 能力地图 / Capability map
 
 <p align="center">
@@ -277,7 +296,7 @@
 
 问题、想法与合作，欢迎来到对应项目的 Issues 或 Discussions。 / *Ideas and collaboration are welcome in each project's Issues or Discussions.*
 
-<sub>Codex Orbit 与 Codex Quota Overview 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。InboxHarbor 是独立开源项目，与 Microsoft 没有隶属或背书关系。 / The Codex projects are unofficial and do not bypass usage limits. The Palworld projects are not affiliated with or endorsed by Pocketpair. InboxHarbor is independent and is not affiliated with or endorsed by Microsoft.</sub>
+<sub>Codex Orbit、Codex Quota Overview 与 Credential Compass 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。InboxHarbor 是独立开源项目，与 Microsoft 没有隶属或背书关系。 / The Codex projects are unofficial and do not bypass usage limits. The Palworld projects are not affiliated with or endorsed by Pocketpair. InboxHarbor is independent and is not affiliated with or endorsed by Microsoft.</sub>
 
 <p align="center">
   <strong>Open source should make difficult work feel possible.</strong><br />
