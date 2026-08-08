@@ -227,6 +227,25 @@
 
 ---
 
+### 12 · [信港 / InboxHarbor](https://github.com/ferretgeek/InboxHarbor)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/InboxHarbor?style=flat-square&label=Stars)](https://github.com/ferretgeek/InboxHarbor/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/InboxHarbor/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/InboxHarbor/actions/workflows/ci.yml)
+
+<a href="https://github.com/ferretgeek/InboxHarbor">
+  <img src="./assets/projects/inboxharbor.png" alt="信港 Microsoft Outlook 批量收件工作台预览 / InboxHarbor Microsoft Outlook batch inbox workbench preview" width="100%" />
+</a>
+
+**把散落的收件箱安静地带回一处。** 批量取件、轻拾验证码，凭据不在磁盘留下脚印。
+
+*Bring scattered inboxes quietly home—batch reading and code extraction without leaving credentials on disk.*
+
+**看点 / Focus** — OAuth2 现代认证 / modern auth · 内存凭据 / memory-only credentials · 隐私遮罩 / privacy veil · 四套全局主题 / four themes · **技术 / Stack** — `Python stdlib` · `JavaScript` · `Docker`
+
+[项目 / Repository](https://github.com/ferretgeek/InboxHarbor) · [English](https://github.com/ferretgeek/InboxHarbor/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/InboxHarbor/blob/main/docs/DEPLOYMENT.md)
+
+---
+
 ## 能力地图 / Capability map
 
 <p align="center">
@@ -258,7 +277,7 @@
 
 问题、想法与合作，欢迎来到对应项目的 Issues 或 Discussions。 / *Ideas and collaboration are welcome in each project's Issues or Discussions.*
 
-<sub>Codex Orbit 与 Codex Quota Overview 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。 / The Codex projects are unofficial and do not bypass usage limits. The Palworld projects are also unofficial and are not affiliated with or endorsed by Pocketpair.</sub>
+<sub>Codex Orbit 与 Codex Quota Overview 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。InboxHarbor 是独立开源项目，与 Microsoft 没有隶属或背书关系。 / The Codex projects are unofficial and do not bypass usage limits. The Palworld projects are not affiliated with or endorsed by Pocketpair. InboxHarbor is independent and is not affiliated with or endorsed by Microsoft.</sub>
 
 <p align="center">
   <strong>Open source should make difficult work feel possible.</strong><br />
