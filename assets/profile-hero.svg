@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title description">
+  <title id="title">Ferret — AI-first open-source tools</title>
+  <desc id="description">让复杂系统变得清楚、可靠、可用。Clear tools for complicated systems.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.55" stop-color="#0a1c2d"/>
+      <stop offset="1" stop-color="#111329"/>
+    </linearGradient>
+    <radialGradient id="cyanGlow" cx="0.74" cy="0.35" r="0.52">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetGlow" cx="0.94" cy="0.84" r="0.46">
+      <stop offset="0" stop-color="#a855f7" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="0.5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#dbeafe" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="cardClip"><rect width="1280" height="440" rx="32"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClip)">
+    <rect width="1280" height="440" fill="url(#background)"/>
+    <rect width="1280" height="440" fill="url(#grid)"/>
+    <rect width="1280" height="440" fill="url(#cyanGlow)"/>
+    <rect width="1280" height="440" fill="url(#violetGlow)"/>
+
+    <path d="M740 118 C882 12 1120 30 1226 170 C1305 275 1227 406 1066 410 C904 414 788 328 816 224 C842 128 1042 108 1132 204 C1202 279 1133 351 1021 337 C923 325 896 246 945 199" fill="none" stroke="url(#accent)" stroke-opacity="0.46" stroke-width="2"/>
+    <path d="M772 340 C862 201 1025 119 1237 116" fill="none" stroke="#e0f2fe" stroke-opacity="0.14" stroke-width="1.5" stroke-dasharray="8 12"/>
+
+    <circle cx="820" cy="310" r="9" fill="#2dd4bf" filter="url(#glow)"/>
+    <circle cx="1000" cy="174" r="9" fill="#38bdf8" filter="url(#glow)"/>
+    <circle cx="1173" cy="315" r="9" fill="#c084fc" filter="url(#glow)"/>
+
+    <g font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+      <text x="84" y="82" fill="#7dd3fc" font-size="19" font-weight="600" letter-spacing="2">AI-first · Self-hosted · Open source</text>
+      <text x="80" y="180" fill="#f8fafc" font-size="82" font-weight="800" letter-spacing="1">FERRET</text>
+      <rect x="84" y="205" width="116" height="4" rx="2" fill="url(#accent)"/>
+      <text x="84" y="272" fill="#e2e8f0" font-size="32" font-weight="650">让复杂系统，变得清楚、可靠、可用。</text>
+      <text x="84" y="318" fill="#9fb3c8" font-size="23">Clear tools for complicated systems.</text>
+      <text x="84" y="382" fill="#647d96" font-size="17">Product clarity · Practical operations · Dependable delivery</text>
+
+      <text x="843" y="304" fill="#99f6e4" font-size="15" font-weight="700">CPA-X</text>
+      <text x="1023" y="169" fill="#bae6fd" font-size="15" font-weight="700">ORBIT</text>
+      <text x="1056" y="355" fill="#e9d5ff" font-size="15" font-weight="700">QUOTA OVERVIEW</text>
+    </g>
+  </g>
+  <rect x="1" y="1" width="1278" height="438" rx="31" fill="none" stroke="#bae6fd" stroke-opacity="0.12" stroke-width="2"/>
+</svg>
