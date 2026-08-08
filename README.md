@@ -269,6 +269,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/ferretgeek/VeilGarden?style=flat-square&label=Stars)](https://github.com/ferretgeek/VeilGarden/stargazers)
 [![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/VeilGarden/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/VeilGarden/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/ferretgeek/VeilGarden?style=flat-square&label=Release)](https://github.com/ferretgeek/VeilGarden/releases/latest)
 
 <a href="https://github.com/ferretgeek/VeilGarden">
   <img src="./assets/projects/veil-garden.png" alt="隐邮花园本地优先隐私地址花园预览 / Veil Garden local-first private address garden preview" width="100%" />
