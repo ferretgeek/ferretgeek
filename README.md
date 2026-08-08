@@ -208,6 +208,25 @@
 
 ---
 
+### 11 · [别名工坊 / Alias Atelier](https://github.com/ferretgeek/AliasAtelier)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/AliasAtelier?style=flat-square&label=Stars)](https://github.com/ferretgeek/AliasAtelier/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/AliasAtelier/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/AliasAtelier/actions/workflows/ci.yml)
+
+<a href="https://github.com/ferretgeek/AliasAtelier">
+  <img src="./assets/projects/alias-atelier.png" alt="别名工坊纯本地邮箱别名界面预览 / Alias Atelier local-first email alias workbench preview" width="100%" />
+</a>
+
+**让一枚邮箱地址长出不同的名字，却仍回到同一个安静的收件箱。** 粘贴、预览、带走，秘密始终留在浏览器里。
+
+*Let one mailbox grow many names while every message returns to the same quiet inbox—without sending your data away.*
+
+**看点 / Focus** — 纯本地处理 / local-only · 敏感字段安全遮挡 / masked metadata · 四套全局主题 / four global themes · **技术 / Stack** — `JavaScript` · `Python stdlib` · `Docker` · `Nginx`
+
+[项目 / Repository](https://github.com/ferretgeek/AliasAtelier) · [English](https://github.com/ferretgeek/AliasAtelier/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/AliasAtelier/blob/main/docs/%E9%83%A8%E7%BD%B2%E8%AF%B4%E6%98%8E.md)
+
+---
+
 ## 能力地图 / Capability map
 
 <p align="center">
