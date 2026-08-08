@@ -3,6 +3,13 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/AI--first-0f766e?style=flat-square" alt="AI-first" />
+  <img src="https://img.shields.io/badge/Self--hosted-0369a1?style=flat-square" alt="Self-hosted" />
+  <img src="https://img.shields.io/badge/Open_source-6d28d9?style=flat-square" alt="Open source" />
+  <img src="https://img.shields.io/badge/Windows_%2B_Linux-334155?style=flat-square" alt="Windows and Linux" />
+</p>
+
+<p align="center">
   <strong>我喜欢把复杂的东西慢慢理清，再做成安静、可靠、有人情味的工具。</strong><br />
   <em>I like untangling complicated things and turning them into calm, dependable tools with a human touch.</em>
 </p>
@@ -12,6 +19,9 @@
 ## 作品 / Work
 
 ### 01 · [CPA-X](https://github.com/ferretgeek/CPA-X)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/CPA-X?style=flat-square&label=Stars)](https://github.com/ferretgeek/CPA-X/stargazers)
+[![Latest release](https://img.shields.io/github/v/release/ferretgeek/CPA-X?style=flat-square&label=Release)](https://github.com/ferretgeek/CPA-X/releases/latest)
 
 <a href="https://github.com/ferretgeek/CPA-X">
   <img src="./assets/projects/cpa-x.png" alt="CPA-X CLIProxyAPI 管理面板预览 / CPA-X CLIProxyAPI admin panel preview" width="100%" />
@@ -29,6 +39,9 @@
 
 ### 02 · [Codex Orbit](https://github.com/ferretgeek/CodexOrbit)
 
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/CodexOrbit?style=flat-square&label=Stars)](https://github.com/ferretgeek/CodexOrbit/stargazers)
+[![Latest release](https://img.shields.io/github/v/release/ferretgeek/CodexOrbit?style=flat-square&label=Release)](https://github.com/ferretgeek/CodexOrbit/releases/latest)
+
 <a href="https://github.com/ferretgeek/CodexOrbit">
   <img src="./assets/projects/codex-orbit.png" alt="Codex Orbit 桌面额度悬浮窗预览 / Codex Orbit desktop quota widget preview" width="100%" />
 </a>
@@ -44,6 +57,9 @@
 ---
 
 ### 03 · [Codex Quota Overview](https://github.com/ferretgeek/codex-quota-overview)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/codex-quota-overview?style=flat-square&label=Stars)](https://github.com/ferretgeek/codex-quota-overview/stargazers)
+[![Latest release](https://img.shields.io/github/v/release/ferretgeek/codex-quota-overview?style=flat-square&label=Release)](https://github.com/ferretgeek/codex-quota-overview/releases/latest)
 
 <a href="https://github.com/ferretgeek/codex-quota-overview">
   <img src="./assets/projects/codex-quota-overview.png" alt="Codex 额度总览批量扫描面板预览 / Codex Quota Overview bulk scanning dashboard preview" width="100%" />
@@ -61,6 +77,9 @@
 
 ### 04 · [LanPlay](https://github.com/ferretgeek/LanPlay)
 
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/LanPlay?style=flat-square&label=Stars)](https://github.com/ferretgeek/LanPlay/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/LanPlay/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/LanPlay/actions/workflows/ci.yml)
+
 <a href="https://github.com/ferretgeek/LanPlay">
   <img src="./assets/projects/lanplay.png" alt="LanPlay 局域网 SMB 播放器预览 / LanPlay local-network SMB media player preview" width="100%" />
 </a>
@@ -76,6 +95,9 @@
 ---
 
 ### 05 · [Vibe Prompt Recorder](https://github.com/ferretgeek/VibePromptRecorder)
+
+[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/VibePromptRecorder?style=flat-square&label=Stars)](https://github.com/ferretgeek/VibePromptRecorder/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/VibePromptRecorder/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/VibePromptRecorder/actions/workflows/ci.yml)
 
 <a href="https://github.com/ferretgeek/VibePromptRecorder">
   <img src="./assets/projects/vibe-prompt-recorder.png" alt="Vibe Prompt Recorder 本地提示词时间线预览 / Vibe Prompt Recorder local prompt timeline preview" width="100%" />
@@ -104,6 +126,19 @@
 
 先理解人真正会在哪里停下来，再设计界面与流程；把复杂藏进系统，把清楚与从容留给使用者。<br />
 *Understand where people pause; keep complexity inside the system and leave clarity at the surface.*
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-14354C?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Go-075985?style=flat-square&logo=go&logoColor=white" alt="Go" />
+  <img src="https://img.shields.io/badge/TypeScript-1D4ED8?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React-0F172A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin" />
+  <img src="https://img.shields.io/badge/Rust-7C2D12?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/Tauri-1F2937?style=flat-square&logo=tauri&logoColor=24C8DB" alt="Tauri" />
+  <img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET" />
+  <img src="https://img.shields.io/badge/Docker-1E40AF?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-1F2937?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+</p>
 
 ---
 
