@@ -31,7 +31,7 @@
 
 *A CLIProxyAPI admin dashboard for health, usage, cost, logs, configuration checks, and verified updates with rollback.*
 
-**看点 / Focus** — 运行全景 / overview · 安全更新与回滚 / safe updates and rollback · Windows / Linux / Docker · **技术 / Stack** — `Python` · `Flask` · `Waitress`
+**看点 / Focus** — 运行全景 / overview · 默认仅本机、远程强认证 / loopback-first, guarded remote access · Windows / Linux / Docker · **技术 / Stack** — `Python` · `Flask` · `Waitress`
 
 [项目 / Repository](https://github.com/ferretgeek/CPA-X) · [下载 / Releases](https://github.com/ferretgeek/CPA-X/releases/latest) · [中文文档 / Docs](https://github.com/ferretgeek/CPA-X/blob/main/README_CN.md)
 
@@ -69,7 +69,7 @@
 
 *A local multi-account Codex quota dashboard with bulk JSON import, live quota checks, paging, summaries, and CSV export.*
 
-**看点 / Focus** — 批量导入 / bulk import · 大规模分页 / large result sets · 汇总与 CSV / summaries and CSV · **技术 / Stack** — `Go` · `React` · `TypeScript` · `Vite`
+**看点 / Focus** — 隔离工作区与路径脱敏 / isolated workspace and masked paths · 大规模分页 / large result sets · 汇总与 CSV / summaries and CSV · **技术 / Stack** — `Go` · `React` · `TypeScript` · `Vite`
 
 [项目 / Repository](https://github.com/ferretgeek/codex-quota-overview) · [下载 / Releases](https://github.com/ferretgeek/codex-quota-overview/releases/latest) · [使用说明 / Guide](https://github.com/ferretgeek/codex-quota-overview/blob/main/README.md)
 
@@ -107,7 +107,7 @@
 
 *An offline Windows workspace for organizing AI coding projects, prompt drafts, conversation turns, Markdown context, search, backup, and recovery.*
 
-**看点 / Focus** — 轮次时间线 / iteration timeline · Markdown 双模式 / two editing modes · 搜索、备份与恢复 / search, backup, recovery · **技术 / Stack** — `Tauri 2` · `Rust` · `React` · `SQLite`
+**看点 / Focus** — 轮次时间线 / iteration timeline · 按需加载的 Markdown 双模式 / lazy-loaded dual editors · 搜索、备份与恢复 / search, backup, recovery · **技术 / Stack** — `Tauri 2` · `Rust` · `React` · `SQLite`
 
 [项目 / Repository](https://github.com/ferretgeek/VibePromptRecorder) · [使用说明 / Guide](https://github.com/ferretgeek/VibePromptRecorder/blob/main/README.md) · [讨论 / Discussions](https://github.com/ferretgeek/VibePromptRecorder/discussions)
 
@@ -126,7 +126,7 @@
 
 *A Linux Palworld server dashboard for status, performance, start/stop controls, backups, updates, and guarded world settings.*
 
-**看点 / Focus** — 安全运维 / guarded operations · 可验证备份 / verified backups · systemd 自动化 / automation · **技术 / Stack** — `Python` · `JavaScript` · `SQLite` · `systemd`
+**看点 / Focus** — 强认证与安全运维 / strong auth and guarded operations · 可验证备份 / verified backups · systemd 自动化 / automation · **技术 / Stack** — `Python` · `JavaScript` · `SQLite` · `systemd`
 
 [项目 / Repository](https://github.com/ferretgeek/PalworldOps) · [使用说明 / Guide](https://github.com/ferretgeek/PalworldOps/blob/main/README.md) · [讨论 / Discussions](https://github.com/ferretgeek/PalworldOps/discussions)
 
@@ -145,7 +145,7 @@
 
 *A Palworld breeding planner and 287-entry atlas with route search, recipe lookup, and read-only local save analysis.*
 
-**看点 / Focus** — 路线规划 / route planning · 反向发现 / reverse discovery · 本地、无遥测 / local, no telemetry · **技术 / Stack** — `Python` · `Tkinter` · `HTML` · `JavaScript`
+**看点 / Focus** — 路线规划 / route planning · 四套持久主题 / four persistent themes · 本地、无遥测 / local, no telemetry · **技术 / Stack** — `Python` · `Tkinter` · `HTML` · `JavaScript`
 
 [项目 / Repository](https://github.com/ferretgeek/PalworldBreedingAtlas) · [使用说明 / Guide](https://github.com/ferretgeek/PalworldBreedingAtlas/blob/main/README.md) · [数据说明 / Data](https://github.com/ferretgeek/PalworldBreedingAtlas/blob/main/docs/%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%9B%B4%E6%96%B0.md)
 
