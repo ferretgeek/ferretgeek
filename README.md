@@ -195,7 +195,7 @@
 [![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/MailFerry/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/MailFerry/actions/workflows/ci.yml)
 
 <a href="https://github.com/ferretgeek/MailFerry">
-  <img src="./assets/projects/mail-ferry.png" alt="信渡自托管邮件取件界面预览 / Mail Ferry self-hosted mail pickup preview" width="100%" />
+  <img src="./assets/projects/mail-ferry.png" alt="信渡登录后的管理后台与运行统计 / Mail Ferry authenticated dashboard and operational metrics" width="100%" />
 </a>
 
 **让每一封来信，都抵达它该去的地方。** 把 IMAP 邮箱化成独立、可撤销的取件链接，在自己的设备上安静流转。
@@ -214,7 +214,7 @@
 [![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/AliasAtelier/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/AliasAtelier/actions/workflows/ci.yml)
 
 <a href="https://github.com/ferretgeek/AliasAtelier">
-  <img src="./assets/projects/alias-atelier.png" alt="别名工坊纯本地邮箱别名界面预览 / Alias Atelier local-first email alias workbench preview" width="100%" />
+  <img src="./assets/projects/alias-atelier.png" alt="别名工坊合成别名生成结果 / Alias Atelier synthetic alias generation results" width="100%" />
 </a>
 
 **让一枚邮箱地址长出不同的名字，却仍回到同一个安静的收件箱。** 粘贴、预览、带走，秘密始终留在浏览器里。
@@ -233,7 +233,7 @@
 [![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/InboxHarbor/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/InboxHarbor/actions/workflows/ci.yml)
 
 <a href="https://github.com/ferretgeek/InboxHarbor">
-  <img src="./assets/projects/inboxharbor.png" alt="信港 Microsoft Outlook 批量收件工作台预览 / InboxHarbor Microsoft Outlook batch inbox workbench preview" width="100%" />
+  <img src="./assets/projects/inboxharbor.png" alt="信港已载入合成来信的批量工作台 / InboxHarbor populated synthetic inbox workbench" width="100%" />
 </a>
 
 **把散落的收件箱安静地带回一处。** 批量取件、轻拾验证码，凭据不在磁盘留下脚印。
@@ -272,7 +272,7 @@
 [![Latest release](https://img.shields.io/github/v/release/ferretgeek/VeilGarden?style=flat-square&label=Release)](https://github.com/ferretgeek/VeilGarden/releases/latest)
 
 <a href="https://github.com/ferretgeek/VeilGarden">
-  <img src="./assets/projects/veil-garden.png" alt="隐邮花园本地优先隐私地址花园预览 / Veil Garden local-first private address garden preview" width="100%" />
+  <img src="./assets/projects/veil-garden.png" alt="隐邮花园已进入系统的合成地址花圃 / Veil Garden populated synthetic address garden" width="100%" />
 </a>
 
 **把替你挡住身份的地址，种进自己的花园。** 不接管 Apple 账户，只在自己的设备上整理、遮罩与带走地址。
@@ -292,7 +292,7 @@
 [![Latest release](https://img.shields.io/github/v/release/ferretgeek/MailLantern?style=flat-square&label=Release)](https://github.com/ferretgeek/MailLantern/releases/latest)
 
 <a href="https://github.com/ferretgeek/MailLantern">
-  <img src="./assets/projects/mail-lantern.png" alt="信灯 iCloud 验证码查找工具预览 / Mail Lantern iCloud verification-code finder preview" width="100%" />
+  <img src="./assets/projects/mail-lantern.png" alt="信灯合成演示中的验证码结果 / Mail Lantern verification-code results in synthetic demo" width="100%" />
 </a>
 
 **在漫长的收件箱里，替那串稍纵即逝的数字点一盏灯。** 只读、短暂，也只留在自己的设备上。
