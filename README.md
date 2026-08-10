@@ -374,6 +374,12 @@
 这些作品跨过后台、网页、Windows 与 Android，却做着同一件事：让复杂退后，让人更安心地使用技术。<br />
 *Across backend, web, Windows, and Android, they share one purpose: let complexity step back.*
 
+## 安全与可靠性 / Security & reliability
+
+2026 年 8 月，15 个公开项目完成新一轮逐库威胁建模、源码到危险操作的数据流复核与回归验证，集中加固认证、请求体与导入资源预算、代理边界、SSRF/DNS 重绑定、敏感错误与日志持久化、CSV 公式、归档恢复、并发状态和 CI 供应链。51 项已确认问题均已在代码、测试和双语维护文档中关闭；高权限 GitHub Actions 固定到审核过的提交，默认部署继续遵循本机回环、远程 TLS、显式认证和最小权限。
+
+*In August 2026, fifteen public projects completed another repository-by-repository threat-model, source-to-sink review, and regression pass. The work hardened authentication, request and import budgets, trusted-proxy boundaries, SSRF and DNS rebinding defenses, sensitive error and log persistence, CSV exports, archive restore paths, concurrent lifecycle state, and CI supply chains. All 51 validated issues were closed in code, tests, and bilingual maintenance documentation; privileged GitHub Actions are pinned to reviewed commits, while deployments retain loopback-first, remote-TLS, explicit-authentication, and least-privilege defaults.*
+
 ## 做东西的方式 / A way of making
 
 先理解人真正会在哪里停下来，再设计界面与流程；把复杂藏进系统，把清楚与从容留给使用者。<br />
