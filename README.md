@@ -1,410 +1,226 @@
 <p align="center">
-  <img src="./assets/profile-hero.png" alt="Ferret — 让复杂系统变得清楚、可靠、可用 / Clear tools for complicated systems" width="100%" />
+  <img src="./assets/profile-hero.png" alt="ferret — 自己遇到的麻烦，自己做个工具解决" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AI--first-0f766e?style=flat-square" alt="AI-first" />
-  <img src="https://img.shields.io/badge/Self--hosted-0369a1?style=flat-square" alt="Self-hosted" />
-  <img src="https://img.shields.io/badge/Open_source-6d28d9?style=flat-square" alt="Open source" />
-  <img src="https://img.shields.io/badge/Windows_%2B_Linux-334155?style=flat-square" alt="Windows and Linux" />
+  <b>中文</b> · <a href="./README_EN.md">English</a>
 </p>
 
-<p align="center">
-  <strong>我喜欢把复杂的东西慢慢理清，再做成安静、可靠、有人情味的工具。</strong><br />
-  <em>I like untangling complicated things and turning them into calm, dependable tools with a human touch.</em>
-</p>
+## 你好
+
+这里的每一个项目，都是我自己先被某件事烦到了，才动手做的。
+
+比如我在手机上想看电脑里的电影，得先传过去；比如我开了个帕鲁服务器，每次改设置都心里没底；比如我有一堆邮箱要收验证码，一个个登录要花半小时。这些事都不难，但都够烦。烦到第三次，我就会把它做成一个工具。
+
+所以这些项目看起来八竿子打不着——一个是帕鲁配种表，一个是 Outlook 令牌续期。但它们有三件事是一样的：
+
+- **装在自己的机器上就能用。** 不需要注册账号，不需要谁的服务器还活着。
+- **你的东西不会离开这台机器。** 邮件、存档、提示词、账号，都留在本地。没有遥测，没有"匿名统计"。
+- **删掉它，不会带走你的数据。** 所有东西都能导出，也都能备份。
+
+不懂代码也能用其中一部分（下面标了 🟢）；剩下的需要你会开个终端、复制一条命令。
 
 ---
 
-## 作品 / Work
+## 挑几个先看
 
-### 01 · [CPA-X — CLIProxyAPI 管理面板 / CLIProxyAPI Admin Dashboard](https://github.com/ferretgeek/CPA-X)
+### 1 · CPA-X — CLIProxyAPI 管理面板
 
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/CPA-X?style=flat-square&label=Stars)](https://github.com/ferretgeek/CPA-X/stargazers)
-[![Latest release](https://img.shields.io/github/v/release/ferretgeek/CPA-X?style=flat-square&label=Release)](https://github.com/ferretgeek/CPA-X/releases/latest)
-
-<a href="https://github.com/ferretgeek/CPA-X">
-  <img src="./assets/projects/cpa-x.png" alt="CPA-X CLIProxyAPI 管理面板预览 / CPA-X CLIProxyAPI admin panel preview" width="100%" />
+<a href="https://github.com/ferretgeek/cliproxyapi-dashboard">
+  <img src="./assets/projects/cpa-x.png" alt="CPA-X 管理面板界面" width="100%" />
 </a>
 
-**CLIProxyAPI 监控与管理面板。** 集中查看运行状态、请求用量、费用、日志和配置，并提供带校验与回滚的安全更新。
+[CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) 能把 Codex、Claude Code、Gemini CLI 的订阅额度变成标准 API，很多人拿它统一调度自己手上的几个号。麻烦不在跑起来，而在跑起来之后：**哪个号被限流了？这个月的 token 花在谁身上？我升级到新版本之后，服务到底还活着吗？**
 
-*A CLIProxyAPI admin dashboard for health, usage, cost, logs, configuration checks, and verified updates with rollback.*
+CPA-X 把这几件事收进一个页面。它读 CLIProxyAPI 自己的日志和管理接口，展示实时请求量、按模型的 token 与成本、每个账号的状态，并接管升级流程。
 
-**看点 / Focus** — 运行全景 / overview · 默认仅本机、远程强认证 / loopback-first, guarded remote access · Windows / Linux / Docker · **技术 / Stack** — `Python` · `Flask` · `Waitress`
+> **技术上值得一提的：** 自动升级不是"下载完就报成功"——先校验 SHA-256、原子替换文件、真的去打一次带认证的管理接口拿到 HTTP 200 才算成功，失败则指数退避并回滚。日志按增量解析（不重读整个文件），支持宿主机与容器时区不一致时反推无偏移量的时间戳。配置区默认只读，主配置回写需要显式开 `CLIPROXY_PANEL_CONFIG_WRITE_ENABLED`。
 
-[项目 / Repository](https://github.com/ferretgeek/CPA-X) · [下载 / Releases](https://github.com/ferretgeek/CPA-X/releases/latest) · [中文文档 / Docs](https://github.com/ferretgeek/CPA-X/blob/main/README_CN.md)
+`Python` · `Flask` · Linux / Windows / Docker · ⭐ 62
+
+[仓库](https://github.com/ferretgeek/cliproxyapi-dashboard) · [下载](https://github.com/ferretgeek/cliproxyapi-dashboard/releases/latest) · [中文文档](https://github.com/ferretgeek/cliproxyapi-dashboard/blob/main/README_CN.md)
 
 ---
 
-### 02 · [Codex Orbit — Codex 额度悬浮窗 / Codex Quota Widget](https://github.com/ferretgeek/CodexOrbit)
+### 2 · 局域网影片播放器 🟢
 
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/CodexOrbit?style=flat-square&label=Stars)](https://github.com/ferretgeek/CodexOrbit/stargazers)
-[![Latest release](https://img.shields.io/github/v/release/ferretgeek/CodexOrbit?style=flat-square&label=Release)](https://github.com/ferretgeek/CodexOrbit/releases/latest)
-
-<a href="https://github.com/ferretgeek/CodexOrbit">
-  <img src="./assets/projects/codex-orbit.png" alt="Codex Orbit 桌面额度悬浮窗预览 / Codex Orbit desktop quota widget preview" width="100%" />
+<a href="https://github.com/ferretgeek/android-smb-player">
+  <img src="./assets/projects/lanplay.png" alt="局域网影片播放器界面" width="100%" />
 </a>
 
-**Windows Codex 额度悬浮窗。** 实时显示 ChatGPT 套餐中的 Codex 主额度、重置倒计时与数据状态，无需打开完整控制台。
+家里的电影都在电脑或 NAS 上，想在手机、平板上看，通常要么先传一份，要么装一整套媒体服务器。
 
-*A Windows desktop widget for live ChatGPT-plan Codex quota, reset countdowns, and source status without opening a full dashboard.*
+其实不用。Windows 共享文件夹、群晖、任何开了 SMB 的设备，这个 App 直接连进去，点开就播。字幕会自动配对（乱码时可以换字符集），看到哪儿自动记住，历史、书签、标签都在手机本地。**没有账号，没有云，没有转码服务器。**
 
-**看点 / Focus** — 一眼可读 / glanceable · 多主题与迷你视图 / themes and compact views · 本地、无遥测 / local, no telemetry · **技术 / Stack** — `C#` · `WPF` · `.NET Framework 4.8`
+> **技术上值得一提的：** SMB 2/3 原生实现，不走 WebDAV 或第三方网关。播放走双内核——Media3 为主，遇到冷门编码自动回退 libVLC，支持硬解、倍速和帧率匹配。凭据在设备上加密保存，日志主动脱敏。另外附一个可选的 PC 端刮削器，提前生成海报和元数据写回共享目录，手机端只读结果，不额外开服务。
 
-[项目 / Repository](https://github.com/ferretgeek/CodexOrbit) · [下载 / Releases](https://github.com/ferretgeek/CodexOrbit/releases/latest) · [架构 / Architecture](https://github.com/ferretgeek/CodexOrbit/blob/main/docs/ARCHITECTURE.md)
+`Kotlin` · `Jetpack Compose` · `Media3` · `libVLC` · Android 8+
+
+[仓库](https://github.com/ferretgeek/android-smb-player) · [使用说明](https://github.com/ferretgeek/android-smb-player/blob/main/README.md)
 
 ---
 
-### 03 · [Codex Quota Overview — 多账户额度总览 / Multi-account Quota Dashboard](https://github.com/ferretgeek/codex-quota-overview)
+### 3 · 帕鲁配种图鉴 🟢
 
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/codex-quota-overview?style=flat-square&label=Stars)](https://github.com/ferretgeek/codex-quota-overview/stargazers)
-[![Latest release](https://img.shields.io/github/v/release/ferretgeek/codex-quota-overview?style=flat-square&label=Release)](https://github.com/ferretgeek/codex-quota-overview/releases/latest)
-
-<a href="https://github.com/ferretgeek/codex-quota-overview">
-  <img src="./assets/projects/codex-quota-overview.png" alt="Codex 额度总览批量扫描面板预览 / Codex Quota Overview bulk scanning dashboard preview" width="100%" />
+<a href="https://github.com/ferretgeek/palworld-breeding-atlas">
+  <img src="./assets/projects/palworld-breeding-atlas.png" alt="帕鲁配种图鉴界面" width="100%" />
 </a>
 
-**多账户 Codex 额度总览。** 批量导入本地认证 JSON、查询剩余额度，并用分页、汇总和 CSV 管理大量结果。
+《幻兽帕鲁》里想要某只帕鲁，配种表在网上到处都有，但它们只告诉你"A + B = C"。真正的问题是：**我现在手上就这些，怎么配最快？中间要不要先去抓一只？**
 
-*A local multi-account Codex quota dashboard with bulk JSON import, live quota checks, paging, summaries, and CSV export.*
+这个工具读你自己的存档（只读，不改），看一眼你实际有什么，然后给出可执行的路线：先配什么、第几步会出什么、哪一步必须去补一只。也可以反过来问——"我手上这些，能配出什么值得练的"。不想连存档也行，287 只图鉴和四万多条配种关系可以直接翻。
 
-**看点 / Focus** — 隔离工作区与路径脱敏 / isolated workspace and masked paths · 大规模分页 / large result sets · 汇总与 CSV / summaries and CSV · **技术 / Stack** — `Go` · `React` · `TypeScript` · `Vite`
+> **技术上值得一提的：** `Level.sav` 的解析是纯只读的，zlib 每一层输出、存档输入体积和库存 JSON 都有解析前的硬上限（可通过环境变量放宽），避免畸形存档打爆内存。新格式存档需要系统里已合法安装的 Oodle DLL，仓库不分发它，找不到时会明确告知而不是静默失败。同一套静态资源可以用 `server_publish.py` 发布成自托管站点，源存档只读、输出走临时目录原子替换。
 
-[项目 / Repository](https://github.com/ferretgeek/codex-quota-overview) · [下载 / Releases](https://github.com/ferretgeek/codex-quota-overview/releases/latest) · [使用说明 / Guide](https://github.com/ferretgeek/codex-quota-overview/blob/main/README.md)
+`Python` · Windows 启动器 + 浏览器界面 · 完全离线
+
+[仓库](https://github.com/ferretgeek/palworld-breeding-atlas) · [数据来源](https://github.com/ferretgeek/palworld-breeding-atlas/blob/main/docs/%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%9B%B4%E6%96%B0.md)
 
 ---
 
-### 04 · [LanPlay — 局域网 SMB 媒体播放器 / LAN SMB Media Player](https://github.com/ferretgeek/LanPlay)
+### 4 · Codex 额度悬浮窗 🟢
 
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/LanPlay?style=flat-square&label=Stars)](https://github.com/ferretgeek/LanPlay/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/LanPlay/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/LanPlay/actions/workflows/ci.yml)
-
-<a href="https://github.com/ferretgeek/LanPlay">
-  <img src="./assets/projects/lanplay.png" alt="LanPlay 局域网 SMB 播放器预览 / LanPlay local-network SMB media player preview" width="100%" />
+<a href="https://github.com/ferretgeek/codex-quota-widget">
+  <img src="./assets/projects/codex-orbit.png" alt="Codex 额度悬浮窗界面" width="100%" />
 </a>
 
-**Android 局域网 SMB 媒体播放器。** 浏览 SMB 2/3 共享，播放视频，并管理字幕、续播、书签和本地观看记录。
+用 Codex 写代码的时候，最怕的是写到一半额度没了。
 
-*An Android media player for browsing SMB 2/3 shares, playing videos, and managing subtitles, resume state, bookmarks, and local history.*
+这是桌面上一个小小的悬浮窗，一直显示 ChatGPT 套餐里 Codex 还剩多少、几点回满。快用完了会提示你，回满了也会提示你。可以做成迷你条、圆环，或者干脆让鼠标穿过去当背景。
 
-**看点 / Focus** — SMB 浏览 / SMB browsing · 双播放内核 / dual playback engines · 字幕、续播与本地历史 / subtitles, resume, local history · **技术 / Stack** — `Kotlin` · `Compose` · `Media3` · `libVLC`
+> **技术上值得一提的：** 它不读 `auth.json`，不要你复制任何 Token——而是按需拉起一个隐藏的本机 `codex app-server` 子进程，通过标准输入输出拿官方额度通知，认证和刷新全部交给 Codex 自己。服务端通知不可用时，退回只读扫描最近会话日志尾部的 `rate_limits` 记录兜底。Codex App、CLI、PATH、IDE 扩展、Windows 安装包和 WSL 六种运行时都会自动发现，装了任意一种就能用。
 
-[项目 / Repository](https://github.com/ferretgeek/LanPlay) · [使用说明 / Guide](https://github.com/ferretgeek/LanPlay/blob/main/README.md) · [讨论 / Discussions](https://github.com/ferretgeek/LanPlay/discussions)
+`C#` · `WPF` · `.NET Framework 4.8` · Windows 10/11
+
+[仓库](https://github.com/ferretgeek/codex-quota-widget) · [下载](https://github.com/ferretgeek/codex-quota-widget/releases/latest) · [架构说明](https://github.com/ferretgeek/codex-quota-widget/blob/main/docs/ARCHITECTURE.md)
 
 ---
 
-### 05 · [Vibe Prompt Recorder — AI 编程提示词记录 / AI Coding Prompt Recorder](https://github.com/ferretgeek/VibePromptRecorder)
+### 5 · Obsidian AI 写作助手 🟢
 
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/VibePromptRecorder?style=flat-square&label=Stars)](https://github.com/ferretgeek/VibePromptRecorder/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/VibePromptRecorder/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/VibePromptRecorder/actions/workflows/ci.yml)
-
-<a href="https://github.com/ferretgeek/VibePromptRecorder">
-  <img src="./assets/projects/vibe-prompt-recorder.png" alt="Vibe Prompt Recorder 本地提示词时间线预览 / Vibe Prompt Recorder local prompt timeline preview" width="100%" />
+<a href="https://github.com/ferretgeek/obsidian-ai-writer">
+  <img src="./assets/projects/vault-muse.png" alt="Obsidian AI 写作助手界面" width="100%" />
 </a>
 
-**Windows AI 编程提示词记录工作台。** 离线整理项目、草稿、对话轮次和 Markdown 上下文，并提供搜索、备份与恢复。
+大部分 AI 笔记插件有两个让人不敢用的地方：它偷偷读了你整个库，以及它直接改了你的文件。
 
-*An offline Windows workspace for organizing AI coding projects, prompt drafts, conversation turns, Markdown context, search, backup, and recovery.*
+这个插件反过来做。上下文是你自己挑的——这几篇笔记、这个标签、这段选中的文字、这张图，每一项都列在旁边，随时能删掉。它要改笔记时先给你一份 diff，你点确认才写回；写错了能撤销，删除只进 Obsidian 废纸篓。
 
-**看点 / Focus** — 轮次时间线 / iteration timeline · 按需加载的 Markdown 双模式 / lazy-loaded dual editors · 搜索、备份与恢复 / search, backup, recovery · **技术 / Stack** — `Tauri 2` · `Rust` · `React` · `SQLite`
+模型接口随你选：OpenAI Responses、任何 OpenAI 兼容接口、Anthropic Messages，或者本地跑的 Ollama。
 
-[项目 / Repository](https://github.com/ferretgeek/VibePromptRecorder) · [使用说明 / Guide](https://github.com/ferretgeek/VibePromptRecorder/blob/main/README.md) · [讨论 / Discussions](https://github.com/ferretgeek/VibePromptRecorder/discussions)
+> **技术上值得一提的：** API Key 与自定义 Header 默认只在内存中，远程接口强制 HTTPS，危险 Header 直接拒绝。写入路径挡掉路径穿越、绝对路径、`.trash` 和 Vault 配置目录。流式回复、思考过程折叠、图片理解、历史搜索与导出、斜杠工作流、提示词缓存都做完了。
 
----
+`TypeScript` · Obsidian 1.8.7+
 
-### 06 · [Palworld Ops — 幻兽帕鲁服务器管理台 / Palworld Server Dashboard](https://github.com/ferretgeek/PalworldOps)
-
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/PalworldOps?style=flat-square&label=Stars)](https://github.com/ferretgeek/PalworldOps/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/PalworldOps/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/PalworldOps/actions/workflows/ci.yml)
-
-<a href="https://github.com/ferretgeek/PalworldOps">
-  <img src="./assets/projects/palworld-ops.png" alt="Palworld Ops 服务端管理面板预览 / Palworld Ops server dashboard preview" width="100%" />
-</a>
-
-**幻兽帕鲁 Linux 服务端管理台。** 查看状态与性能，执行启停、备份、更新和世界设置，危险操作带确认与回滚边界。
-
-*A Linux Palworld server dashboard for status, performance, start/stop controls, backups, updates, and guarded world settings.*
-
-**看点 / Focus** — 强认证与安全运维 / strong auth and guarded operations · 可验证备份 / verified backups · systemd 自动化 / automation · **技术 / Stack** — `Python` · `JavaScript` · `SQLite` · `systemd`
-
-[项目 / Repository](https://github.com/ferretgeek/PalworldOps) · [使用说明 / Guide](https://github.com/ferretgeek/PalworldOps/blob/main/README.md) · [讨论 / Discussions](https://github.com/ferretgeek/PalworldOps/discussions)
+[仓库](https://github.com/ferretgeek/obsidian-ai-writer) · [在线演示](https://ferretgeek.github.io/obsidian-ai-writer/) · [隐私说明](https://github.com/ferretgeek/obsidian-ai-writer/blob/main/docs/PRIVACY.md)
 
 ---
 
-### 07 · [Palworld Breeding Atlas — 幻兽帕鲁配种规划与图鉴 / Palworld Breeding Planner & Atlas](https://github.com/ferretgeek/PalworldBreedingAtlas)
+## 全部 18 个项目
 
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/PalworldBreedingAtlas?style=flat-square&label=Stars)](https://github.com/ferretgeek/PalworldBreedingAtlas/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/PalworldBreedingAtlas/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/PalworldBreedingAtlas/actions/workflows/ci.yml)
+🟢 = 不用写代码也能上手
 
-<a href="https://github.com/ferretgeek/PalworldBreedingAtlas">
-  <img src="./assets/projects/palworld-breeding-atlas.png" alt="帕鲁配种图鉴预览 / Palworld Breeding Atlas preview" width="100%" />
-</a>
+### AI 与开发
 
-**幻兽帕鲁配种规划与图鉴。** 查询 287 条图鉴和数万条配种关系，规划繁育路线，并以只读方式分析本地存档。
+| 项目 | 一句话 | 技术栈 |
+|---|---|---|
+| [**CPA-X** · CLIProxyAPI 管理面板](https://github.com/ferretgeek/cliproxyapi-dashboard) ⭐62 | 一页看清哪个账号还活着、token 花在哪、升级有没有成功 | `Python` `Flask` |
+| [**Codex 额度悬浮窗**](https://github.com/ferretgeek/codex-quota-widget) 🟢 | 桌面小窗随时显示 Codex 还剩多少、几点回满 | `C#` `WPF` |
+| [**Codex 额度总览**](https://github.com/ferretgeek/codex-quota-overview) | 几十上百个号一次导入，批量查额度，导出 CSV | `Go` `React` |
+| [**CLIProxyAPI 凭证体检**](https://github.com/ferretgeek/cliproxyapi-credential-check) | 凭证池里哪个号该换了，默认只读，停用要输确认短语 | `Python` |
+| [**大模型接口测速台**](https://github.com/ferretgeek/llm-api-benchmark) | 首字等多久、每秒多少字、缓存命中多少、这次花了多少钱 | `Python` `FastAPI` |
+| [**提示词手账**](https://github.com/ferretgeek/prompt-journal) 🟢 | 和 AI 一轮轮改出来的提示词，离线存本机，能搜能备份 | `Tauri` `Rust` `React` |
+| [**Obsidian AI 写作助手**](https://github.com/ferretgeek/obsidian-ai-writer) 🟢 | 只读你指定的笔记，改动先给你看，确认才写回 | `TypeScript` |
 
-*A Palworld breeding planner and 287-entry atlas with route search, recipe lookup, and read-only local save analysis.*
+### 邮箱与隐私
 
-**看点 / Focus** — 路线规划 / route planning · 四套持久主题 / four persistent themes · 本地、无遥测 / local, no telemetry · **技术 / Stack** — `Python` · `Tkinter` · `HTML` · `JavaScript`
+| 项目 | 一句话 | 技术栈 |
+|---|---|---|
+| [**自建域名收件箱**](https://github.com/ferretgeek/domain-mail-inbox) | 让自己的域名真能收信，任意 `名字@你的域名` 都收得到 | `Python` 标准库 `SQLite` |
+| [**邮件取件链接**](https://github.com/ferretgeek/imap-pickup-links) | 每个邮箱一条独立网页链接，对方打开就能收码，随时撤销 | `Python` 标准库 `SQLite` |
+| [**Outlook 批量收件台**](https://github.com/ferretgeek/outlook-batch-inbox) | 一次看 50 个 Outlook 邮箱的新邮件和验证码，只用 OAuth | `Python` 标准库 |
+| [**iCloud 验证码查找**](https://github.com/ferretgeek/icloud-code-finder) | 从 iCloud 最近的邮件里直接捞出验证码，用完即忘 | `Python` 标准库 |
+| [**隐私邮箱地址管理**](https://github.com/ferretgeek/hide-my-email-manager) 🟢 | Apple「隐藏邮件地址」建多了记不住，导入打标签搜索备份 | `Python` `SQLite` |
+| [**Outlook 令牌续期**](https://github.com/ferretgeek/outlook-token-keeper) | 一批授权账号的令牌到期前自动续，并验证邮箱还连得上 | `Python` `FastAPI` `PostgreSQL` |
+| [**邮箱别名生成器**](https://github.com/ferretgeek/email-alias-generator) 🟢 | 批量生成 `名字+标签@域名`，纯浏览器本地，什么都不上传 | `JavaScript` 纯前端 |
 
-[项目 / Repository](https://github.com/ferretgeek/PalworldBreedingAtlas) · [使用说明 / Guide](https://github.com/ferretgeek/PalworldBreedingAtlas/blob/main/README.md) · [数据说明 / Data](https://github.com/ferretgeek/PalworldBreedingAtlas/blob/main/docs/%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%9B%B4%E6%96%B0.md)
+### 游戏
 
----
+| 项目 | 一句话 | 技术栈 |
+|---|---|---|
+| [**帕鲁配种图鉴**](https://github.com/ferretgeek/palworld-breeding-atlas) 🟢 | 从手上现有的帕鲁出发，算出配到目标最省事的路线 | `Python` 离线 |
+| [**帕鲁服务器面板**](https://github.com/ferretgeek/palworld-server-panel) | 自己开的服，网页里看状态、改设置、备份、更新 | `Python` `systemd` |
 
-### 08 · [Ferret Mail — 自托管域名收件箱 / Self-hosted Domain Inbox](https://github.com/ferretgeek/FerretMail)
+### 影音与网络
 
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/FerretMail?style=flat-square&label=Stars)](https://github.com/ferretgeek/FerretMail/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/FerretMail/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/FerretMail/actions/workflows/ci.yml)
+| 项目 | 一句话 | 技术栈 |
+|---|---|---|
+| [**局域网影片播放器**](https://github.com/ferretgeek/android-smb-player) 🟢 | 手机直接播电脑/NAS 共享里的影片，字幕进度都在本地 | `Kotlin` `Media3` `libVLC` |
+| [**代理节点体检**](https://github.com/ferretgeek/proxy-uptime-monitor) | 真的走一遍代理再判断通不通，而不是 ping 一下就说好 | `Python` `FastAPI` `sing-box` |
 
-<a href="https://github.com/ferretgeek/FerretMail">
-  <img src="./assets/projects/ferret-mail.png" alt="Ferret Mail 域名收件箱预览 / Ferret Mail domain inbox preview" width="100%" />
-</a>
+<details>
+<summary><b>展开看剩下 13 个的界面</b></summary>
 
-**自托管域名收件箱。** 接收多域名 SMTP 邮件，通过网页和 API 搜索来信、验证码、链接与附件。
+<br />
 
-*A self-hosted receive-only domain inbox for SMTP ingestion and web/API access to messages, codes, links, and attachments.*
+以下截图全部来自专为开源展示生成的合成数据，不包含任何真实账号、邮件、存档或主机信息。
 
-**看点 / Focus** — 多域名收件 / multi-domain inbox · 验证码与附件 / codes and attachments · 备份与限流 / backup and rate limits · **技术 / Stack** — `Python stdlib` · `SMTP` · `SQLite`
+| | |
+|---|---|
+| [提示词手账](https://github.com/ferretgeek/prompt-journal)<br /><img src="./assets/projects/vibe-prompt-recorder.png" width="100%" /> | [帕鲁服务器面板](https://github.com/ferretgeek/palworld-server-panel)<br /><img src="./assets/projects/palworld-ops.png" width="100%" /> |
+| [Codex 额度总览](https://github.com/ferretgeek/codex-quota-overview)<br /><img src="./assets/projects/codex-quota-overview.png" width="100%" /> | [大模型接口测速台](https://github.com/ferretgeek/llm-api-benchmark)<br /><img src="./assets/projects/spectrum-bench.png" width="100%" /> |
+| [CLIProxyAPI 凭证体检](https://github.com/ferretgeek/cliproxyapi-credential-check)<br /><img src="./assets/projects/credential-compass.png" width="100%" /> | [代理节点体检](https://github.com/ferretgeek/proxy-uptime-monitor)<br /><img src="./assets/projects/trailmark.png" width="100%" /> |
+| [自建域名收件箱](https://github.com/ferretgeek/domain-mail-inbox)<br /><img src="./assets/projects/ferret-mail.png" width="100%" /> | [邮件取件链接](https://github.com/ferretgeek/imap-pickup-links)<br /><img src="./assets/projects/mail-ferry.png" width="100%" /> |
+| [Outlook 批量收件台](https://github.com/ferretgeek/outlook-batch-inbox)<br /><img src="./assets/projects/inboxharbor.png" width="100%" /> | [Outlook 令牌续期](https://github.com/ferretgeek/outlook-token-keeper)<br /><img src="./assets/projects/token-loom.png" width="100%" /> |
+| [iCloud 验证码查找](https://github.com/ferretgeek/icloud-code-finder)<br /><img src="./assets/projects/mail-lantern.png" width="100%" /> | [隐私邮箱地址管理](https://github.com/ferretgeek/hide-my-email-manager)<br /><img src="./assets/projects/veil-garden.png" width="100%" /> |
+| [邮箱别名生成器](https://github.com/ferretgeek/email-alias-generator)<br /><img src="./assets/projects/alias-atelier.png" width="100%" /> | |
 
-[项目 / Repository](https://github.com/ferretgeek/FerretMail) · [部署 / Deploy](https://github.com/ferretgeek/FerretMail/blob/main/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B.md) · [API / Docs](https://github.com/ferretgeek/FerretMail/blob/main/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3.md)
-
----
-
-### 09 · [航迹 / Trailmark — 代理节点可用性监控 / Proxy Availability Monitor](https://github.com/ferretgeek/Trailmark)
-
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/Trailmark?style=flat-square&label=Stars)](https://github.com/ferretgeek/Trailmark/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/Trailmark/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/Trailmark/actions/workflows/ci.yml)
-
-<a href="https://github.com/ferretgeek/Trailmark">
-  <img src="./assets/projects/trailmark.png" alt="航迹节点观测面板预览 / Trailmark node observability dashboard preview" width="100%" />
-</a>
-
-**代理节点可用性监控。** 通过真实 sing-box 代理链路检测 DNS、TCP、TLS、HTTP 与页面特征，定位节点或服务故障。
-
-*A proxy availability monitor that tests DNS, TCP, TLS, HTTP, and page features through real sing-box routes to locate failures.*
-
-**看点 / Focus** — 真实链路检测 / real-path probes · DNS、TCP、TLS 与页面特征 / layered diagnostics · 本地与服务器 / local and server · **技术 / Stack** — `Python` · `FastAPI` · `SQLite` · `sing-box`
-
-[项目 / Repository](https://github.com/ferretgeek/Trailmark) · [English](https://github.com/ferretgeek/Trailmark/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/Trailmark/blob/main/docs/%E9%83%A8%E7%BD%B2%E4%B8%8E%E8%BF%90%E7%BB%B4.md)
-
----
-
-### 10 · [信渡 / Mail Ferry — 邮箱取件链接 / Email Pickup Links](https://github.com/ferretgeek/MailFerry)
-
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/MailFerry?style=flat-square&label=Stars)](https://github.com/ferretgeek/MailFerry/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/MailFerry/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/MailFerry/actions/workflows/ci.yml)
-
-<a href="https://github.com/ferretgeek/MailFerry">
-  <img src="./assets/projects/mail-ferry.png" alt="信渡登录后的管理后台与运行统计 / Mail Ferry authenticated dashboard and operational metrics" width="100%" />
-</a>
-
-**自托管邮箱取件链接。** 把 IMAP 邮箱转换成独立、可撤销的网页取件 URL，并提供缓存、管理后台和部署工具。
-
-*A self-hosted service that turns IMAP mailboxes into independent, revocable web pickup URLs with caching and an admin dashboard.*
-
-**看点 / Focus** — 独立取件链接 / revocable pickup links · 缓存与降级读取 / resilient cache · 本地与服务器 / local and server · **技术 / Stack** — `Python stdlib` · `IMAP` · `SQLite` · `systemd`
-
-[项目 / Repository](https://github.com/ferretgeek/MailFerry) · [English](https://github.com/ferretgeek/MailFerry/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/MailFerry/blob/main/docs/%E9%83%A8%E7%BD%B2%E8%AF%B4%E6%98%8E.md)
+</details>
 
 ---
 
-### 11 · [别名工坊 / Alias Atelier — 邮箱 +Tag 地址生成器 / Email +Tag Generator](https://github.com/ferretgeek/AliasAtelier)
+## 我做东西的几条规矩
 
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/AliasAtelier?style=flat-square&label=Stars)](https://github.com/ferretgeek/AliasAtelier/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/AliasAtelier/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/AliasAtelier/actions/workflows/ci.yml)
+**先想清楚人会在哪一步卡住。** 界面上每一个空状态、加载中、出错、"我是不是点错了"，都要有人管。做完功能只是一半。
 
-<a href="https://github.com/ferretgeek/AliasAtelier">
-  <img src="./assets/projects/alias-atelier.png" alt="别名工坊合成别名生成结果 / Alias Atelier synthetic alias generation results" width="100%" />
-</a>
+**默认值必须是安全的那一个。** 只监听本机；账号和邮件默认打码；能只读就只读；停用、删除、完整导出这类不可逆操作要求逐次输入确认短语——而不是"你确定吗"点一下就过。
 
-**本地邮箱 +Tag 地址生成器。** 在浏览器内批量生成、遮罩预览并导出 Gmail、Microsoft 或自定义域名别名。
+**假的成功比失败更糟。** 备份要能真的恢复回来（带成员清单和哈希）；升级要真的打一次健康检查才算成功；测速要以完整 usage 为准，不能把并发吞吐伪装成单请求速度。
 
-*A local-only browser tool for bulk-generating, masked-previewing, and exporting Gmail, Microsoft, or custom-domain +tag addresses.*
+**每个项目都能装在你自己的地方。** 本地跑和自己服务器托管共享同一套核心逻辑与数据格式，不做只能用云的版本。
 
-**看点 / Focus** — 纯本地处理 / local-only · 敏感字段安全遮挡 / masked metadata · 四套全局主题 / four global themes · **技术 / Stack** — `JavaScript` · `Python stdlib` · `Docker` · `Nginx`
+**界面值得认真做。** 每个带界面的项目都有一套完整主题（深灰暗色 + 三到五套浅色配色），覆盖弹窗、表格、表单、编辑器和全部交互状态，选择会记住。手机上也是完整可用，不是"能打开"。
 
-[项目 / Repository](https://github.com/ferretgeek/AliasAtelier) · [English](https://github.com/ferretgeek/AliasAtelier/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/AliasAtelier/blob/main/docs/%E9%83%A8%E7%BD%B2%E8%AF%B4%E6%98%8E.md)
+<details>
+<summary><b>2026 年 8 月的一次集中加固（技术读者向）</b></summary>
 
----
+<br />
 
-### 12 · [信港 / InboxHarbor — Outlook 批量收件台 / Outlook Batch Inbox](https://github.com/ferretgeek/InboxHarbor)
+15 个公开项目做了一轮逐库威胁建模和从源到危险操作的数据流复核，重点在认证与会话、请求体与导入资源预算、可信代理边界、SSRF 与 DNS 重绑定、敏感错误与日志落盘、CSV 公式注入、归档恢复路径、并发生命周期状态，以及 CI 供应链。
 
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/InboxHarbor?style=flat-square&label=Stars)](https://github.com/ferretgeek/InboxHarbor/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/InboxHarbor/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/InboxHarbor/actions/workflows/ci.yml)
+确认的 51 个问题全部在代码、测试和维护文档里关闭。高权限 GitHub Actions 固定到审核过的 commit；部署默认值保持本机回环优先、远程强制 TLS、显式认证、最小权限。
 
-<a href="https://github.com/ferretgeek/InboxHarbor">
-  <img src="./assets/projects/inboxharbor.png" alt="信港已载入合成来信的批量工作台 / InboxHarbor populated synthetic inbox workbench" width="100%" />
-</a>
-
-**Outlook 批量收件工作台。** 通过 OAuth2 只读查看多个 Microsoft 邮箱并提取验证码，凭据仅在内存使用。
-
-*A privacy-first Outlook batch inbox for read-only OAuth2 access, verification-code extraction, and memory-only credentials.*
-
-**看点 / Focus** — OAuth2 现代认证 / modern auth · 内存凭据 / memory-only credentials · 隐私遮罩 / privacy veil · 四套全局主题 / four themes · **技术 / Stack** — `Python stdlib` · `JavaScript` · `Docker`
-
-[项目 / Repository](https://github.com/ferretgeek/InboxHarbor) · [English](https://github.com/ferretgeek/InboxHarbor/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/InboxHarbor/blob/main/docs/DEPLOYMENT.md)
+</details>
 
 ---
-
-### 13 · [凭证罗盘 / Credential Compass — CLIProxyAPI 凭证池体检 / CLIProxyAPI Credential Health](https://github.com/ferretgeek/CredentialCompass)
-
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/CredentialCompass?style=flat-square&label=Stars)](https://github.com/ferretgeek/CredentialCompass/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/CredentialCompass/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/CredentialCompass/actions/workflows/ci.yml)
-
-<a href="https://github.com/ferretgeek/CredentialCompass">
-  <img src="./assets/projects/credential-compass.png" alt="凭证罗盘 CLIProxyAPI 凭证池健康工作台预览 / Credential Compass credential-pool health workbench preview" width="100%" />
-</a>
-
-**CLIProxyAPI 凭证池体检面板。** 汇总账号健康、启用状态和额度轮廓，并提供可逆的停用与恢复操作。
-
-*A CLIProxyAPI credential-pool dashboard for health, enablement, quota outlines, and reversible disable/restore controls.*
-
-**看点 / Focus** — 默认只读 / read-only by default · 账号遮罩 / masked identities · 可逆状态控制 / reversible controls · 四套全局主题 / four themes · **技术 / Stack** — `Python stdlib` · `JavaScript` · `Docker`
-
-[项目 / Repository](https://github.com/ferretgeek/CredentialCompass) · [English](https://github.com/ferretgeek/CredentialCompass/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/CredentialCompass/blob/main/docs/DEPLOYMENT.md)
-
----
-
-### 14 · [隐邮花园 / Veil Garden — Hide My Email 地址管理 / Hide My Email Organizer](https://github.com/ferretgeek/VeilGarden)
-
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/VeilGarden?style=flat-square&label=Stars)](https://github.com/ferretgeek/VeilGarden/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/VeilGarden/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/VeilGarden/actions/workflows/ci.yml)
-[![Latest release](https://img.shields.io/github/v/release/ferretgeek/VeilGarden?style=flat-square&label=Release)](https://github.com/ferretgeek/VeilGarden/releases/latest)
-
-<a href="https://github.com/ferretgeek/VeilGarden">
-  <img src="./assets/projects/veil-garden.png" alt="隐邮花园已进入系统的合成地址花圃 / Veil Garden populated synthetic address garden" width="100%" />
-</a>
-
-**Hide My Email 地址整理工具。** 本地导入、搜索、标记、遮罩和导出已有隐私邮箱地址，不接管 Apple 账号。
-
-*A local-first organizer for importing, searching, labeling, masking, and exporting existing Hide My Email addresses without controlling Apple accounts.*
-
-**看点 / Focus** — 默认遮罩 / masked by default · 本地导入与备份 / local import and backup · 四套全局主题 / four themes · **技术 / Stack** — `Python stdlib` · `JavaScript` · `SQLite` · `Docker`
-
-[项目 / Repository](https://github.com/ferretgeek/VeilGarden) · [English](https://github.com/ferretgeek/VeilGarden/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/VeilGarden/blob/main/docs/DEPLOYMENT.md)
-
----
-
-### 15 · [信灯 / Mail Lantern — iCloud 验证码查找 / iCloud Code Finder](https://github.com/ferretgeek/MailLantern)
-
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/MailLantern?style=flat-square&label=Stars)](https://github.com/ferretgeek/MailLantern/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/MailLantern/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/MailLantern/actions/workflows/ci.yml)
-[![Latest release](https://img.shields.io/github/v/release/ferretgeek/MailLantern?style=flat-square&label=Release)](https://github.com/ferretgeek/MailLantern/releases/latest)
-
-<a href="https://github.com/ferretgeek/MailLantern">
-  <img src="./assets/projects/mail-lantern.png" alt="信灯合成演示中的验证码结果 / Mail Lantern verification-code results in synthetic demo" width="100%" />
-</a>
-
-**iCloud 验证码查找工具。** 通过官方 IMAP 只读扫描最近邮件，提取验证码并遮罩发件人与收件人。
-
-*A read-only iCloud IMAP tool that scans recent messages, extracts verification codes, and masks sender and recipient identities.*
-
-**看点 / Focus** — 官方 iCloud IMAP / official iCloud IMAP · 密码仅驻留内存 / memory-only password · 本地与服务器 / local and server · 四套主题 / four themes · **技术 / Stack** — `Python stdlib` · `JavaScript` · `Docker`
-
-[项目 / Repository](https://github.com/ferretgeek/MailLantern) · [English](https://github.com/ferretgeek/MailLantern/blob/main/README_EN.md) · [部署 / Deploy](https://github.com/ferretgeek/MailLantern/blob/main/docs/DEPLOYMENT.md)
-
----
-
-### 16 · [卷语 / VaultMuse — Obsidian AI 对话与写作 / Obsidian AI Chat & Writing](https://github.com/ferretgeek/VaultMuse)
-
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/VaultMuse?style=flat-square&label=Stars)](https://github.com/ferretgeek/VaultMuse/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/VaultMuse/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/VaultMuse/actions/workflows/ci.yml)
-[![Latest release](https://img.shields.io/github/v/release/ferretgeek/VaultMuse?style=flat-square&label=Release)](https://github.com/ferretgeek/VaultMuse/releases/latest)
-
-<a href="https://github.com/ferretgeek/VaultMuse">
-  <img src="./assets/projects/vault-muse.png" alt="卷语 Obsidian AI 对话与写作伴侣预览 / VaultMuse Obsidian AI conversation and writing companion preview" width="100%" />
-</a>
-
-**Obsidian AI 对话与写作助手。** 按明确选择的笔记上下文聊天，生成可审阅的修改，并支持确认写回与撤销。
-
-*An Obsidian AI chat and writing assistant with explicit note context, reviewable edits, confirmed write-back, and undo.*
-
-**看点 / Focus** — 显式上下文 / explicit context · 审阅后写回 / guarded note editing · 内存敏感配置 / memory-only secrets · 四套主题 / four themes · **技术 / Stack** — `TypeScript` · `Obsidian API` · `Node.js`
-
-[项目 / Repository](https://github.com/ferretgeek/VaultMuse) · [在线演示 / Live demo](https://ferretgeek.github.io/VaultMuse/) · [English](https://github.com/ferretgeek/VaultMuse/blob/main/README_EN.md)
-
----
-
-### 17 · [令牌织机 / TokenLoom — Outlook OAuth 令牌续期 / Outlook OAuth Token Renewal](https://github.com/ferretgeek/TokenLoom)
-
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/TokenLoom?style=flat-square&label=Stars)](https://github.com/ferretgeek/TokenLoom/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/TokenLoom/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/TokenLoom/actions/workflows/ci.yml)
-[![Latest release](https://img.shields.io/github/v/release/ferretgeek/TokenLoom?style=flat-square&label=Release)](https://github.com/ferretgeek/TokenLoom/releases/latest)
-
-<a href="https://github.com/ferretgeek/TokenLoom">
-  <img src="./assets/projects/token-loom.png" alt="令牌织机 Outlook 授权令牌续期台预览 / TokenLoom authorized Outlook token renewal console preview" width="100%" />
-</a>
-
-**Outlook OAuth 令牌续期与体检台。** 加密管理获授权的 Refresh Token，定时刷新并只读验证邮箱连接。
-
-*A self-hosted Outlook OAuth console for encrypted token management, scheduled renewal, and read-only mailbox health checks.*
-
-**看点 / Focus** — 持久任务 / durable jobs · 字段加密 / field encryption · 只读体检 / read-only health checks · 四套主题 / four themes · **技术 / Stack** — `Python` · `FastAPI` · `PostgreSQL` · `Docker`
-
-[项目 / Repository](https://github.com/ferretgeek/TokenLoom) · [在线演示 / Live demo](https://ferretgeek.github.io/TokenLoom/) · [English](https://github.com/ferretgeek/TokenLoom/blob/main/README_EN.md)
-
----
-
-### 18 · [光谱测速台 / SpectrumBench — Responses API 测速与用量 / Responses API Speed & Usage](https://github.com/ferretgeek/SpectrumBench)
-
-[![GitHub stars](https://img.shields.io/github/stars/ferretgeek/SpectrumBench?style=flat-square&label=Stars)](https://github.com/ferretgeek/SpectrumBench/stargazers)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/SpectrumBench/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/SpectrumBench/actions/workflows/ci.yml)
-[![Latest release](https://img.shields.io/github/v/release/ferretgeek/SpectrumBench?style=flat-square&label=Release)](https://github.com/ferretgeek/SpectrumBench/releases/latest)
-
-<a href="https://github.com/ferretgeek/SpectrumBench">
-  <img src="./assets/projects/spectrum-bench.png" alt="光谱测速台 Responses API 性能工作台预览 / SpectrumBench Responses API performance workbench preview" width="100%" />
-</a>
-
-**Responses API 测速与用量工作台。** 测量首 Token 延迟、稳定输出速度、缓存与 Token 消耗，并导出脱敏报告。
-
-*A Responses API benchmark for time to first token, sustained output speed, caching, token usage, and redacted report export.*
-
-**看点 / Focus** — 三种可复现实验 / three reproducible modes · 内存凭据与脱敏报告 / memory-only credentials and redacted reports · 四套全局主题 / four themes · **技术 / Stack** — `Python` · `FastAPI` · `WebSocket` · `Docker`
-
-[项目 / Repository](https://github.com/ferretgeek/SpectrumBench) · [在线演示 / Live demo](https://ferretgeek.github.io/SpectrumBench/) · [测量方法 / Methodology](https://github.com/ferretgeek/SpectrumBench/blob/main/docs/%E6%B5%8B%E9%87%8F%E6%96%B9%E6%B3%95.md)
-
----
-
-## 能力地图 / Capability map
-
-<p align="center">
-  <img src="./assets/capability-map.png" alt="Ferret 产品、全栈、桌面、运维与交付能力地图 / Ferret product, full-stack, desktop, operations, and delivery capability map" width="100%" />
-</p>
-
-这些作品跨过后台、网页、Windows 与 Android，却做着同一件事：让复杂退后，让人更安心地使用技术。<br />
-*Across backend, web, Windows, and Android, they share one purpose: let complexity step back.*
-
-## 安全与可靠性 / Security & reliability
-
-2026 年 8 月，15 个公开项目完成新一轮逐库威胁建模、源码到危险操作的数据流复核与回归验证，集中加固认证、请求体与导入资源预算、代理边界、SSRF/DNS 重绑定、敏感错误与日志持久化、CSV 公式、归档恢复、并发状态和 CI 供应链。51 项已确认问题均已在代码、测试和双语维护文档中关闭；高权限 GitHub Actions 固定到审核过的提交，默认部署继续遵循本机回环、远程 TLS、显式认证和最小权限。
-
-*In August 2026, fifteen public projects completed another repository-by-repository threat-model, source-to-sink review, and regression pass. The work hardened authentication, request and import budgets, trusted-proxy boundaries, SSRF and DNS rebinding defenses, sensitive error and log persistence, CSV exports, archive restore paths, concurrent lifecycle state, and CI supply chains. All 51 validated issues were closed in code, tests, and bilingual maintenance documentation; privileged GitHub Actions are pinned to reviewed commits, while deployments retain loopback-first, remote-TLS, explicit-authentication, and least-privilege defaults.*
-
-## 做东西的方式 / A way of making
-
-先理解人真正会在哪里停下来，再设计界面与流程；把复杂藏进系统，把清楚与从容留给使用者。<br />
-*Understand where people pause; keep complexity inside the system and leave clarity at the surface.*
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-14354C?style=flat-square&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Go-075985?style=flat-square&logo=go&logoColor=white" alt="Go" />
   <img src="https://img.shields.io/badge/TypeScript-1D4ED8?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/React-0F172A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin" />
   <img src="https://img.shields.io/badge/Rust-7C2D12?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="C#" />
   <img src="https://img.shields.io/badge/Tauri-1F2937?style=flat-square&logo=tauri&logoColor=24C8DB" alt="Tauri" />
-  <img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET" />
   <img src="https://img.shields.io/badge/Docker-1E40AF?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-1F2937?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
 </p>
 
----
-
-问题、想法与合作，欢迎来到对应项目的 Issues 或 Discussions。 / *Ideas and collaboration are welcome in each project's Issues or Discussions.*
-
-<sub>Codex Orbit、Codex Quota Overview、Credential Compass 与 SpectrumBench 是非官方社区项目，与 OpenAI 没有隶属、授权或背书关系，也不会绕过任何额度限制。Palworld Ops 与 Palworld Breeding Atlas 同样是非官方社区项目，与 Pocketpair 没有隶属、授权或背书关系。InboxHarbor、TokenLoom、Veil Garden 与 Mail Lantern 均为独立项目，与 Microsoft 或 Apple 没有隶属或背书关系。 / The Codex and SpectrumBench projects are unofficial and do not bypass usage limits. The Palworld projects are not affiliated with or endorsed by Pocketpair. InboxHarbor, TokenLoom, Veil Garden, and Mail Lantern are independent projects, not affiliated with or endorsed by Microsoft or Apple.</sub>
+<p align="center">
+  有想法、有问题、想一起做，去对应项目的 Issues 或 Discussions 找我。
+</p>
 
 <p align="center">
-  <strong>Open source should make difficult work feel possible.</strong><br />
-  <sub>开源不只是公开代码，也应该让困难的事情真正变得可完成。</sub>
+  <sub>
+  以上都是独立的社区项目。Codex 和 CLIProxyAPI 相关工具与 OpenAI 没有隶属、授权或背书关系，也不绕过任何额度限制；帕鲁相关工具与 Pocketpair 无关；Outlook、iCloud、Hide My Email 相关工具与 Microsoft、Apple 无关。各自的商标归其权利人所有。
+  </sub>
 </p>

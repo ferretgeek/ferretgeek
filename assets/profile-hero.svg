@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title description">
-  <title id="title">Ferret — AI-first open-source tools</title>
-  <desc id="description">让复杂系统变得清楚、可靠、可用。Clear tools for complicated systems.</desc>
+  <title id="title">ferret — 18 个自己动手做的开源小工具</title>
+  <desc id="description">自己遇到的麻烦，做成能用的工具。Tools I built because something kept annoying me.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07111f"/>
@@ -44,16 +44,16 @@
     <circle cx="1173" cy="315" r="9" fill="#c084fc" filter="url(#glow)"/>
 
     <g font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
-      <text x="84" y="82" fill="#7dd3fc" font-size="19" font-weight="600" letter-spacing="2">AI-first · Self-hosted · Open source</text>
+      <text x="84" y="82" fill="#7dd3fc" font-size="19" font-weight="600" letter-spacing="2">18 个开源小工具 · 本地运行 · 自己托管</text>
       <text x="80" y="180" fill="#f8fafc" font-size="82" font-weight="800" letter-spacing="1">FERRET</text>
       <rect x="84" y="205" width="116" height="4" rx="2" fill="url(#accent)"/>
-      <text x="84" y="272" fill="#e2e8f0" font-size="32" font-weight="650">让复杂系统，变得清楚、可靠、可用。</text>
-      <text x="84" y="318" fill="#9fb3c8" font-size="23">Clear tools for complicated systems.</text>
-      <text x="84" y="382" fill="#647d96" font-size="17">Product clarity · Practical operations · Dependable delivery</text>
+      <text x="84" y="272" fill="#e2e8f0" font-size="32" font-weight="650">自己遇到的麻烦，做成能用的工具。</text>
+      <text x="84" y="318" fill="#9fb3c8" font-size="23">Tools I built because something kept annoying me.</text>
+      <text x="84" y="382" fill="#647d96" font-size="17">装在自己机器上 · 数据留在本地 · 随时能导出</text>
 
       <text x="843" y="304" fill="#99f6e4" font-size="15" font-weight="700">CPA-X</text>
-      <text x="1023" y="169" fill="#bae6fd" font-size="15" font-weight="700">ORBIT</text>
-      <text x="1056" y="355" fill="#e9d5ff" font-size="15" font-weight="700">QUOTA OVERVIEW</text>
+      <text x="1023" y="169" fill="#bae6fd" font-size="15" font-weight="700">SMB PLAYER</text>
+      <text x="1056" y="355" fill="#e9d5ff" font-size="15" font-weight="700">QUOTA WIDGET</text>
     </g>
   </g>
   <rect x="1" y="1" width="1278" height="438" rx="31" fill="none" stroke="#bae6fd" stroke-opacity="0.12" stroke-width="2"/>
