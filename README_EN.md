@@ -8,7 +8,7 @@
 
 Tools I built for everyday problems. Browse my **18 open-source projects** by what you want to do.
 
-[AI tools](#ai-tools) · [Email tools](#email-tools) · [Media and networks](#media-and-networks) · [Palworld tools](#palworld-tools)
+[AI tools](#user-content-ai-tools) · [Email tools](#user-content-email-tools) · [Media and networks](#user-content-media-and-networks) · [Palworld tools](#user-content-palworld-tools)
 
 ## AI tools
 
