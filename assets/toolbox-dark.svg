@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="176" viewBox="0 0 960 176" role="img" aria-labelledby="title desc">
+  <title id="title">ferret — Open source toolbox</title>
+  <desc id="desc">AI, email, media and networks, and Palworld tools.</desc>
+  <rect width="960" height="176" rx="12" fill="#172a28"/>
+  <path d="M0 160V16A16 16 0 0 1 16 0" fill="none" stroke="#d89865" stroke-width="5"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+    <text x="38" y="38" fill="#adc2b8" font-size="12" font-weight="600" letter-spacing="2.7">OPEN SOURCE TOOLBOX</text>
+    <text x="35" y="101" fill="#e7eee5" font-size="57" font-weight="700" letter-spacing="-2">ferret<tspan fill="#c98451">.</tspan></text>
+    <text x="39" y="140" fill="#adc2b8" font-size="13" letter-spacing="1">AI · EMAIL · MEDIA &amp; NETWORKS · PALWORLD</text>
+  </g>
+  <path d="M670 34V142" stroke="#344d45"/>
+  <g stroke="#344d45" stroke-width="1.5" fill="#223b34">
+    <rect x="710" y="37" width="49" height="49" rx="11"/>
+    <rect x="769" y="37" width="49" height="49" rx="11"/>
+    <rect x="828" y="37" width="49" height="49" rx="11"/>
+    <rect x="710" y="96" width="49" height="49" rx="11"/>
+    <rect x="769" y="96" width="49" height="49" rx="11"/>
+    <rect x="828" y="96" width="49" height="49" rx="11"/>
+  </g>
+  <g stroke="#82a596" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M724 61h21m-10.5-10.5v21"/>
+    <rect x="781" y="52" width="25" height="19" rx="3"/><path d="m783 55 10.5 8 10.5-8"/>
+    <path d="m847 51 13 10-13 10Z"/>
+    <path d="m723 126 8-12 7 7 8-11"/>
+    <rect x="782" y="108" width="24" height="24" rx="4"/><path d="M788 115h12m-12 7h8"/>
+    <circle cx="852.5" cy="120.5" r="12"/><path d="M846 120h13m-6-6v13"/>
+  </g>
+</svg>
