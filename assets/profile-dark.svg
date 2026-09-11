@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="224" viewBox="0 0 960 224" role="img" aria-labelledby="title desc">
+  <title id="title">ferret — Build. Verify. Deliver.</title>
+  <desc id="desc">AI applications, automation services, desktop and mobile development.</desc>
+  <rect width="960" height="224" rx="16" fill="#14201e"/>
+  <rect x="0" y="28" width="5" height="168" rx="2" fill="#83d7b5"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="40" y="44" fill="#83d7b5" font-size="13" font-weight="700" letter-spacing="3">FERRET / SOFTWARE DEVELOPMENT</text>
+    <text x="38" y="107" fill="#ecf4ef" font-size="43" font-weight="700" letter-spacing="-1.5">Build. Verify. Deliver.</text>
+    <text x="40" y="143" fill="#afc5bc" font-size="16">From real needs to complete software experiences.</text>
+    <path d="M40 164 H592" stroke="#304a42"/>
+    <text x="40" y="192" fill="#afc5bc" font-size="12" font-weight="600" letter-spacing="1.2">AI APPLICATIONS</text>
+    <circle cx="182" cy="187" r="2" fill="#83d7b5"/>
+    <text x="199" y="192" fill="#afc5bc" font-size="12" font-weight="600" letter-spacing="1.2">AUTOMATION</text>
+    <circle cx="318" cy="187" r="2" fill="#83d7b5"/>
+    <text x="335" y="192" fill="#afc5bc" font-size="12" font-weight="600" letter-spacing="1.2">DESKTOP &amp; MOBILE</text>
+    <rect x="682" y="34" width="238" height="156" rx="12" fill="#1c2e29" stroke="#304a42"/>
+    <path d="M710 69 V155" stroke="#304a42" stroke-width="2"/>
+    <g fill="#83d7b5"><circle cx="710" cy="69" r="5"/><circle cx="710" cy="112" r="5"/><circle cx="710" cy="155" r="5"/></g>
+    <g fill="#ecf4ef" font-size="15" font-weight="600"><text x="730" y="74">Clear interactions</text><text x="730" y="117">Deliberate data design</text><text x="730" y="160">Recovery by design</text></g>
+  </g>
+</svg>

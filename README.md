@@ -1,65 +1,122 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/toolbox-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/toolbox-light.svg">
-  <img src="./assets/toolbox-light.svg" alt="ferret 的开源工具箱 — AI、邮箱、影音网络与帕鲁工具" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-dark.svg">
+  <img src="./assets/profile-light.svg" alt="ferret — 从真实需求出发，构建完整的软件体验" width="100%">
 </picture>
 
 中文 · [English](./README_EN.md)
 
-把自己遇到的小麻烦，做成能用的工具。这里收录了我的 **18 个开源项目**，按用途整理。
+# 你好，我是 ferret
 
-[AI 工具](#user-content-ai-工具) · [邮箱工具](#user-content-邮箱工具) · [影音与网络](#user-content-影音与网络) · [帕鲁工具](#user-content-帕鲁工具)
+**专注 AI 应用、自动化服务与桌面 / 移动端开发。**
 
-## AI 工具
+我喜欢把真实使用场景中的需求，转化为交互清晰、数据可控、便于维护的软件。我的开源实践覆盖从需求拆解、界面设计、接口与数据存储，到测试验证、打包发布和部署维护的完整过程。
 
-| 项目 | 帮你做什么 |
-| :--- | :--- |
-| [Codex 额度悬浮窗](https://github.com/ferretgeek/codex-quota-widget) | 在 Windows 桌面查看 Codex 剩余额度和重置时间。 |
-| [Codex 多账号额度总览](https://github.com/ferretgeek/codex-quota-overview) | 一次查看多个 Codex 账号的额度，导出表格。 |
-| [提示词手账](https://github.com/ferretgeek/prompt-journal) | 保存和搜索每一轮提示词，方便回顾、复用和备份。 |
-| [Obsidian AI 写作助手](https://github.com/ferretgeek/obsidian-ai-writer) | 让 AI 参考你选中的笔记写作，修改先预览再保存。 |
-| [AI 接口测速工具](https://github.com/ferretgeek/llm-api-benchmark) | 比较 AI 接口的响应等待时间、输出速度和估算费用。 |
-| [CLIProxyAPI 管理面板 · CPA-X](https://github.com/ferretgeek/cliproxyapi-dashboard) | 查看已部署服务的状态、账号和日志；Linux 下可管理升级。 |
-| [CLIProxyAPI 账号检查工具](https://github.com/ferretgeek/cliproxyapi-credential-check) | 查看账号启用状态，可选检测可用性和额度。 |
+比起单纯增加功能，我更关注功能背后的工程问题：**AI 的表现如何客观衡量？后台任务中断后怎样继续？应用升级失败后如何恢复？敏感数据应该在哪里保存？** 下面的项目，是我对这些问题的具体实践。
 
-## 邮箱工具
+[代表项目](#user-content-代表项目) · [工程实践](#user-content-工程实践) · [更多项目](#user-content-更多项目)
 
-| 项目 | 帮你做什么 |
-| :--- | :--- |
-| [邮箱别名生成器](https://github.com/ferretgeek/email-alias-generator) | 为已有邮箱生成带标签的收件地址，方便区分注册来源。 |
-| [Apple 隐藏邮件地址管理](https://github.com/ferretgeek/hide-my-email-manager) | 整理已创建的隐藏地址，添加标签、搜索和备份。 |
-| [iCloud 验证码查找](https://github.com/ferretgeek/icloud-code-finder) | 从 iCloud 最近收到的邮件中查找并复制验证码。 |
-| [Outlook 批量收件台](https://github.com/ferretgeek/outlook-batch-inbox) | 集中查看多个已授权 Outlook 邮箱的新邮件和验证码。 |
-| [Outlook 授权续期工具](https://github.com/ferretgeek/outlook-token-keeper) | 定时刷新已有邮箱授权，检查连接状态和失败记录。 |
-| [邮件取件链接](https://github.com/ferretgeek/imap-pickup-links) | 给已有邮箱生成可撤销的网页取件链接。 |
-| [自建域名收件箱](https://github.com/ferretgeek/domain-mail-inbox) | 在自己的服务器上，为自己的域名搭建网页收件箱。 |
+## 代表项目
 
-## 影音与网络
+### [CPA-X · AI 接口服务管理](https://github.com/ferretgeek/cliproxyapi-dashboard)
 
-| 项目 | 帮你做什么 |
-| :--- | :--- |
-| [局域网视频播放器](https://github.com/ferretgeek/android-smb-player) | 用 Android 手机播放电脑或 NAS 共享文件夹里的视频。 |
-| [代理节点可用性监测](https://github.com/ferretgeek/proxy-uptime-monitor) | 持续检查代理节点能否真正打开目标网页，查看故障记录。 |
+为已部署的 CLIProxyAPI 提供可视化管理：查看运行状态、请求日志，并在 Linux 下管理服务升级。
 
-## 帕鲁工具
+- **实现重点：** 增量解析日志；升级经过 SHA-256 校验、原子替换和真实接口健康检查，失败时触发回滚，并对失败版本退避重试。
+- **设计考虑：** 进程启动不等于服务可用。把“更新成功”建立在接口验证上，并为失败准备恢复路径。
 
-| 项目 | 帮你做什么 |
-| :--- | :--- |
-| [帕鲁配种助手](https://github.com/ferretgeek/palworld-breeding-atlas) | 查询配种关系，从已有帕鲁规划目标路线，可读取存档。 |
-| [帕鲁服务器管理面板](https://github.com/ferretgeek/palworld-server-panel) | 管理已搭好的 Linux 帕鲁服务器：状态、设置、备份与更新。 |
+`Python` · `Flask` · `Linux / systemd`
+
+### [大模型 API 性能评测](https://github.com/ferretgeek/llm-api-benchmark)
+
+在固定测试场景下，比较模型接口多久开始响应、输出有多快，以及估算的 API 成本。
+
+- **实现重点：** 解析流式响应，分别记录首字延迟、输出速度和 Token 用量；预热与正式样本分离，完整用量与中断估算分开统计。
+- **设计考虑：** 不把并发吞吐当成单请求速度，也不把估算当成账单，让结果有明确口径、便于复测。
+
+`Python` · `流式 API` · `性能测量`
+
+### [Outlook 授权维护服务](https://github.com/ferretgeek/outlook-token-keeper)
+
+集中维护已获授权的邮箱账号，定时刷新授权、检查连接状态，并记录需要人工处理的异常。
+
+- **实现重点：** Web 与后台 Worker 分离；任务和进度持久化到 PostgreSQL，支持单 Worker 重启后续跑；凭据采用绑定账号与字段的 AES-256-GCM 加密。
+- **设计考虑：** 批量操作不依赖网页一直开着；敏感字段不仅要加密，还要校验它属于哪个账号，防止密文被错位替换。
+
+`Python / FastAPI` · `PostgreSQL` · `OAuth 2.0` · `Docker`
+
+### [提示词手账 · 本地优先桌面应用](https://github.com/ferretgeek/prompt-journal)
+
+按项目和轮次管理与 AI 协作时的提示词，支持编辑、检索、导出与备份，数据保存在自己的电脑上。
+
+- **实现重点：** React 交互层与 Rust 本地逻辑配合；SQLite WAL 与事务管理数据，版本检查识别编辑冲突，结合原子文件写入、关闭保护和恢复流程。
+- **设计考虑：** 自动保存之外，还要处理同时修改、意外退出和数据迁移，减少静默覆盖与数据丢失的风险。
+
+`TypeScript / React` · `Rust / Tauri 2` · `SQLite`
+
+### [Android 局域网视频播放器](https://github.com/ferretgeek/android-smb-player)
+
+在手机上直接播放电脑或 NAS 共享目录中的视频，无需先复制影片，也无需额外部署转码服务。
+
+- **实现重点：** 接入 SMB 2/3 共享，整合 Media3 与 libVLC 双播放内核，处理字幕、续播、观看记录和设备端凭据加密。
+- **设计考虑：** 将网络读取、播放控制和本地数据管理拆开，应对不同媒体格式与使用环境，而不只是播放一个示例视频。
+
+`Kotlin` · `Jetpack Compose` · `Media3 / libVLC` · `SMB`
+
+### [帕鲁配种路线规划](https://github.com/ferretgeek/palworld-breeding-atlas)
+
+从玩家实际拥有的帕鲁出发，规划目标配种路线，比较不同方案需要的步骤和额外资源。
+
+- **实现重点：** 对配种关系进行多策略路线求解，结合库存与亲本性别约束；存档只读解析，限制输入与解压体积；求解器可独立运行回归测试。
+- **设计考虑：** 把静态配方查询推进为带约束的路线规划，同时处理数据来源、异常输入和算法验证。
+
+`Python` · `JavaScript` · `路线求解` · `数据解析`
+
+## 工程实践
+
+我在项目中持续落实的，不只是功能清单：
+
+- **为失败设计：** 用健康检查、事务、任务进度与备份恢复处理异常，而不是只验证正常流程。
+- **明确数据与权限边界：** 按场景使用凭据加密、日志脱敏、只读访问和写入确认，让数据流向与操作权限可解释。
+- **让交付可以验证：** 在不同项目中配置类型检查、单元 / 回归测试和 CI，并补齐环境要求、部署步骤及恢复说明。
+
+主要技术实践围绕 **Python 服务端、TypeScript / React 界面、Rust / Tauri 桌面应用与 Kotlin Android 开发** 展开；根据数据与部署需求选用 SQLite、PostgreSQL、Docker 和 systemd。
+
+## 更多项目
 
 <details>
-<summary><b>第一次用 GitHub？从这里开始</b></summary>
+<summary><b>展开其余 12 个项目 · AI 工作流 / 邮件服务 / 网络与运维</b></summary>
 
-- **想先试一个简单工具：** 邮箱别名生成器可以下载完整源码并解压后，用浏览器打开 `index.html`。它生成地址，不创建新邮箱；收信前要确认邮箱支持标签地址。
-- **想直接运行桌面工具：** 两个 Codex 额度工具都有 Windows 发布包。进入项目后找「下载」或 **Releases**，并先阅读账号和运行环境要求。
-- **想用 Obsidian 插件：** 在 Obsidian AI 写作助手的项目页按步骤安装插件，再配置自己的模型服务。
-- **其他工具怎么运行：** 部分项目需要 Python 等运行环境，少数需要源码编译或服务器部署。局域网视频播放器、提示词手账目前需要源码构建；各项目首页会说明具体条件。
+### AI 工作流与应用集成
 
-项目页的 **README** 是使用说明，**Releases** 是已发布的版本，**Issues** 用来反馈问题。截图和详细步骤都放在各自的项目页里。
+| 项目 | 方向与实现 |
+| :--- | :--- |
+| [Obsidian AI 写作助手](https://github.com/ferretgeek/obsidian-ai-writer) | 用户选择笔记上下文，多协议模型接入，文件修改先预览差异、确认后写回。基于 `grok-obsidian` 的独立衍生开发，来源见仓库 NOTICE。 |
+| [Codex 桌面额度监控](https://github.com/ferretgeek/codex-quota-widget) | Windows 悬浮窗展示剩余额度与重置时间，并提供低额度提醒。 |
+| [Codex 多账号额度总览](https://github.com/ferretgeek/codex-quota-overview) | 导入已有登录文件，集中查询多账号额度并导出结果。 |
+| [CLIProxyAPI 凭据状态检查](https://github.com/ferretgeek/cliproxyapi-credential-check) | 汇总账号启用状态，可选探测可用性与额度；区分静态清单和在线检查。 |
+
+### 邮件服务与授权访问
+
+| 项目 | 方向与实现 |
+| :--- | :--- |
+| [自建域名收件服务](https://github.com/ferretgeek/domain-mail-inbox) | Python 标准库实现 SMTP 收件、HTTP API 与 SQLite 存储，支持域名级权限与健康检查；只收信、不发信。 |
+| [Outlook 批量收件台](https://github.com/ferretgeek/outlook-batch-inbox) | 集中查询多个已授权邮箱的新邮件与验证码。 |
+| [IMAP 网页取件服务](https://github.com/ferretgeek/imap-pickup-links) | 为已有邮箱生成可撤销的网页访问链接，控制收件内容的访问入口。 |
+| [iCloud 验证码检索](https://github.com/ferretgeek/icloud-code-finder) | 从近期邮件中提取验证码，简化授权邮箱的收件查询。 |
+| [Apple 隐藏邮件地址管理](https://github.com/ferretgeek/hide-my-email-manager) | 管理已导入地址的标签、备注、搜索与备份；不修改 Apple 端状态。 |
+| [邮箱别名生成](https://github.com/ferretgeek/email-alias-generator) | 在浏览器本地生成带标签的收件地址；是否支持收信取决于邮箱服务商。 |
+
+### 网络监测与服务运维
+
+| 项目 | 方向与实现 |
+| :--- | :--- |
+| [代理节点可用性监测](https://github.com/ferretgeek/proxy-uptime-monitor) | 通过节点实际访问目标网页，持续记录连通性与故障情况。 |
+| [帕鲁服务器管理面板](https://github.com/ferretgeek/palworld-server-panel) | 管理已搭建的 Linux 专用服务器，覆盖运行状态、配置、备份与更新。 |
 
 </details>
 
 ---
 
-有问题或建议，欢迎到对应项目的 Issues 留言。
+**想体验项目？** 点击项目名查看说明与界面，发布版本见各仓库的 **Releases**；部分项目需要源码构建或自行部署。
+
+**想交流实现或反馈问题？** 欢迎在对应仓库的 **Issues** 留言。源码、架构说明与测试，是了解这些项目的进一步入口。
