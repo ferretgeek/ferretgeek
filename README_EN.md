@@ -1,122 +1,80 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-dark.svg">
-  <img src="./assets/profile-light.svg" alt="ferret — Building complete software experiences from real needs" width="100%">
-</picture>
+<!-- 图片由本地设计脚本生成；assets/stats 由 .github/workflows/stats.yml 每日自动更新。 -->
 
-[中文](./README.md) · English
+<p align="right">
+  <a href="https://github.com/ferretgeek"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/switch-dark.svg"><img src="./assets/en/switch-light.svg" alt="切换到简体中文" width="176"></picture></a>
+  <a href="https://ferretgeek.github.io/?lang=en"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/site-dark.svg"><img src="./assets/en/site-light.svg" alt="Website" width="135"></picture></a>
+</p>
 
-# Hi, I'm ferret
+<a href="https://ferretgeek.github.io/?lang=en"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/hero-dark.svg"><img src="./assets/en/hero-light.svg" alt="ferret — Well-made tools for real needs." width="100%"></picture></a>
 
-**I build AI applications, automation services, and desktop / mobile software.**
+<p align="center"><a href="#user-content-works">Selected Works</a> · <a href="#user-content-index">More Works</a> · <a href="#user-content-principles">Principles</a> · <a href="#user-content-activity">Activity</a> · <a href="#user-content-contact">Contact</a> · <a href="https://ferretgeek.github.io/?lang=en">Website</a> · <a href="https://github.com/ferretgeek">中文</a></p>
 
-I turn real-world requirements into software with clear interactions, deliberate data handling, and maintainable implementations. My open-source work spans requirements, interface design, APIs and storage, testing, packaging, deployment, and maintenance.
+<a name="works"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/section-works-dark.svg"><img src="./assets/en/section-works-light.svg" alt="Selected Works" width="100%"></picture>
 
-Beyond adding features, I focus on the engineering questions behind them: **How should AI performance be measured? How can interrupted jobs resume? What happens when an upgrade fails? Where should sensitive data live?** These projects show how I approach those questions.
+<a href="https://github.com/ferretgeek/cliproxyapi-dashboard"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/work-cliproxyapi-dashboard-dark.svg"><img src="./assets/en/work-cliproxyapi-dashboard-light.svg" alt="CPA-X · AI service management — A web console for self-hosted CLIProxyAPI: service status, request logs, and usage history at a glance, plus verified, rollback-safe upgrades on Linux / systemd." width="100%"></picture></a>
 
-[Selected projects](#user-content-selected-projects) · [Engineering practices](#user-content-engineering-practices) · [More projects](#user-content-more-projects)
+<a href="https://github.com/ferretgeek/llm-api-benchmark"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/work-llm-api-benchmark-dark.svg"><img src="./assets/en/work-llm-api-benchmark-light.svg" alt="LLM API Benchmark — Compares model APIs on equal terms: fixed scenarios, one request at a time, with time to first text, output speed, token usage, and estimated cost kept apart." width="100%"></picture></a>
 
-## Selected projects
+<a href="https://github.com/ferretgeek/outlook-token-keeper"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/work-outlook-token-keeper-dark.svg"><img src="./assets/en/work-outlook-token-keeper-light.svg" alt="Outlook Token Keeper — Keeps authorized Outlook mailboxes healthy: scheduled token refresh, read-only connection checks, and a clear list of what needs attention. No message bodies, no passwords." width="100%"></picture></a>
 
-### [CPA-X · AI Service Management](https://github.com/ferretgeek/cliproxyapi-dashboard)
+<a href="https://github.com/ferretgeek/prompt-journal"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/work-prompt-journal-dark.svg"><img src="./assets/en/work-prompt-journal-light.svg" alt="Prompt Journal — Records AI prompts by project and revision, with autosave, search, export, and backups. No accounts, cloud sync, or telemetry: the data stays on your computer." width="100%"></picture></a>
 
-A management interface for an existing CLIProxyAPI deployment: inspect service status and request logs, and manage upgrades on Linux.
+<a href="https://github.com/ferretgeek/android-smb-player"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/work-android-smb-player-dark.svg"><img src="./assets/en/work-android-smb-player-light.svg" alt="LAN Video Player — Browse and play videos from a PC or NAS over SMB on phones and tablets, with subtitles, resume, and watch history. No copying, no transcoding server." width="100%"></picture></a>
 
-- **Implementation:** Incremental log parsing; upgrades use SHA-256 verification, atomic replacement, and real API health checks, with rollback on failure and retry backoff for failed versions.
-- **Design rationale:** A running process is not necessarily a working service. Verify the actual endpoint before reporting success, and provide a recovery path when it fails.
+<a href="https://github.com/ferretgeek/palworld-breeding-atlas"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/work-palworld-breeding-atlas-dark.svg"><img src="./assets/en/work-palworld-breeding-atlas-light.svg" alt="Palworld Breeding Planner — Pick a target Pal and compare breeding routes from the ones you already own, steps and missing Pals side by side, with optional read-only save parsing." width="100%"></picture></a>
 
-`Python` · `Flask` · `Linux / systemd`
+<a name="index"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/section-index-dark.svg"><img src="./assets/en/section-index-light.svg" alt="More Works" width="100%"></picture>
 
-### [LLM API Performance Evaluation](https://github.com/ferretgeek/llm-api-benchmark)
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/group-ai-dark.svg"><img src="./assets/en/group-ai-light.svg" alt="AI & Dev Tools" width="100%"></picture>
 
-Compare response latency, output speed, and estimated API cost under fixed test scenarios.
+<p>
+  <a href="https://github.com/ferretgeek/obsidian-ai-writer"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/tile-obsidian-ai-writer-dark.svg"><img src="./assets/en/tile-obsidian-ai-writer-light.svg" alt="Obsidian AI Writer — Writes with your chosen notes as context; edits are diff-previewed and confirmed. Derived from grok-obsidian." width="49%"></picture></a>
+  <a href="https://github.com/ferretgeek/codex-quota-widget"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/tile-codex-quota-widget-dark.svg"><img src="./assets/en/tile-codex-quota-widget-light.svg" alt="Codex Quota Widget — A Windows overlay for remaining Codex quota and reset time" width="49%"></picture></a>
+</p>
+<p>
+  <a href="https://github.com/ferretgeek/codex-quota-overview"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/tile-codex-quota-overview-dark.svg"><img src="./assets/en/tile-codex-quota-overview-light.svg" alt="Codex Quota Overview — Check quota for many Codex sign-in files in one table, then export CSV" width="49%"></picture></a>
+  <a href="https://github.com/ferretgeek/cliproxyapi-credential-check"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/tile-cliproxyapi-credential-check-dark.svg"><img src="./assets/en/tile-cliproxyapi-credential-check-light.svg" alt="Credential Check — Review CLIProxyAPI credential status, with optional health and quota probes" width="49%"></picture></a>
+</p>
 
-- **Implementation:** Parse streaming responses and track time to first text, output speed, and token usage separately. Keep warm-ups outside formal samples and interrupted estimates separate from complete usage.
-- **Design rationale:** Concurrent throughput is not single-request speed, and an estimate is not a bill. Explicit measurement rules make results easier to interpret and reproduce.
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/group-mail-dark.svg"><img src="./assets/en/group-mail-light.svg" alt="Mail & Accounts" width="100%"></picture>
 
-`Python` · `Streaming APIs` · `Performance measurement`
+<p>
+  <a href="https://github.com/ferretgeek/domain-mail-inbox"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/tile-domain-mail-inbox-dark.svg"><img src="./assets/en/tile-domain-mail-inbox-light.svg" alt="Domain Mail Inbox — Receive-only mail for your own domains, with a web inbox for codes and files" width="49%"></picture></a>
+  <a href="https://github.com/ferretgeek/outlook-batch-inbox"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/tile-outlook-batch-inbox-dark.svg"><img src="./assets/en/tile-outlook-batch-inbox-light.svg" alt="Outlook Batch Inbox — Recent mail and verification codes from up to 50 authorized Outlook mailboxes" width="49%"></picture></a>
+</p>
+<p>
+  <a href="https://github.com/ferretgeek/imap-pickup-links"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/tile-imap-pickup-links-dark.svg"><img src="./assets/en/tile-imap-pickup-links-light.svg" alt="IMAP Pickup Links — Revocable web links for viewing recent mail from an existing mailbox" width="49%"></picture></a>
+  <a href="https://github.com/ferretgeek/icloud-code-finder"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/tile-icloud-code-finder-dark.svg"><img src="./assets/en/tile-icloud-code-finder-light.svg" alt="iCloud Code Finder — Find verification codes in recent iCloud mail, filtered by time and recipient" width="49%"></picture></a>
+</p>
+<p>
+  <a href="https://github.com/ferretgeek/hide-my-email-manager"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/tile-hide-my-email-manager-dark.svg"><img src="./assets/en/tile-hide-my-email-manager-light.svg" alt="Hide My Email Manager — Organize existing Hide My Email addresses with labels, notes, and search" width="49%"></picture></a>
+  <a href="https://github.com/ferretgeek/email-alias-generator"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/tile-email-alias-generator-dark.svg"><img src="./assets/en/tile-email-alias-generator-light.svg" alt="Email Alias Generator — Generate tagged plus-address lists locally in the browser and export them" width="49%"></picture></a>
+</p>
 
-### [Outlook Authorization Maintenance](https://github.com/ferretgeek/outlook-token-keeper)
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/group-more-dark.svg"><img src="./assets/en/group-more-light.svg" alt="Media, Network & Games" width="100%"></picture>
 
-Maintain explicitly authorized mailbox accounts, schedule authorization refreshes, check connectivity, and record exceptions that need attention.
+<p>
+  <a href="https://github.com/ferretgeek/proxy-uptime-monitor"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/tile-proxy-uptime-monitor-dark.svg"><img src="./assets/en/tile-proxy-uptime-monitor-light.svg" alt="Proxy Uptime Monitor — Check whether proxy nodes actually reach target sites, and where they fail" width="49%"></picture></a>
+  <a href="https://github.com/ferretgeek/palworld-server-panel"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/tile-palworld-server-panel-dark.svg"><img src="./assets/en/tile-palworld-server-panel-light.svg" alt="Palworld Server Panel — Manage an existing Linux Palworld server: status, settings, backups, updates" width="49%"></picture></a>
+</p>
 
-- **Implementation:** Separate the Web application from a background Worker. Persist jobs and progress in PostgreSQL so a single Worker can resume after restart. Encrypt credentials with AES-256-GCM bound to each account and field.
-- **Design rationale:** Batch work should not depend on an open browser. Encryption should also verify which account a secret belongs to, rejecting ciphertext moved to the wrong account or field.
+<a name="principles"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/section-principles-dark.svg"><img src="./assets/en/section-principles-light.svg" alt="Principles" width="100%"></picture>
 
-`Python / FastAPI` · `PostgreSQL` · `OAuth 2.0` · `Docker`
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/principles-dark.svg"><img src="./assets/en/principles-light.svg" alt="韧 Design for failure: Health checks, transactions, resumable jobs, and backups give every failure a way back. / 界 Clear boundaries: Encrypted secrets, redacted logs, read-only access, and confirmed writes keep data flows explainable. / 证 Verifiable delivery: Type checks, regression tests, and CI, with deployment and recovery notes anyone can follow." width="100%"></picture>
 
-### [Prompt Journal · Local-First Desktop Application](https://github.com/ferretgeek/prompt-journal)
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/toolbox-dark.svg"><img src="./assets/en/toolbox-light.svg" alt="Languages: Python, TypeScript, JavaScript, Kotlin, Rust, Go, C#; Clients: React, Tauri 2, Jetpack Compose, WPF, Media3, libVLC; Services: FastAPI, Flask, WebSocket, OAuth 2.0, IMAP, SMTP; Data & Ops: SQLite, PostgreSQL, Docker, systemd" width="100%"></picture>
 
-Organize AI collaboration prompts by project and iteration, with editing, search, export, and backups stored on the user's computer.
+<a name="activity"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/section-activity-dark.svg"><img src="./assets/en/section-activity-light.svg" alt="Activity" width="100%"></picture>
 
-- **Implementation:** A React interface backed by Rust application logic; SQLite WAL and transactions, revision-based conflict detection, atomic file writes, close protection, and recovery workflows.
-- **Design rationale:** Autosave is only part of persistence. Concurrent edits, unexpected exits, and data migration also need explicit handling to reduce silent overwrites and data loss.
+<a href="https://github.com/ferretgeek?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/stats/en-dark.svg"><img src="./assets/stats/en-light.svg" alt="GitHub stats: projects, stars, contributions, and languages" width="100%"></picture></a>
 
-`TypeScript / React` · `Rust / Tauri 2` · `SQLite`
+<a name="contact"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/section-contact-dark.svg"><img src="./assets/en/section-contact-light.svg" alt="Contact" width="100%"></picture>
 
-### [Android LAN Video Player](https://github.com/ferretgeek/android-smb-player)
+<a href="mailto:ferretgeek@vip.qq.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/en/contact-dark.svg"><img src="./assets/en/contact-light.svg" alt="ferretgeek@vip.qq.com" width="100%"></picture></a>
 
-Play videos directly from a computer or NAS share without copying files first or deploying an additional transcoding service.
-
-- **Implementation:** SMB 2/3 access, integrated Media3 and libVLC playback engines, subtitles, playback resumption, watch history, and on-device credential encryption.
-- **Design rationale:** Separate network access, playback control, and local data management to address varied media formats and usage conditions—not just play a sample video.
-
-`Kotlin` · `Jetpack Compose` · `Media3 / libVLC` · `SMB`
-
-### [Palworld Breeding Route Planner](https://github.com/ferretgeek/palworld-breeding-atlas)
-
-Plan breeding routes from the Pals a player actually owns, comparing the steps and additional resources required by different options.
-
-- **Implementation:** Multi-strategy route solving with inventory and parent-gender constraints; read-only save parsing with input and decompression limits; independently runnable solver regression tests.
-- **Design rationale:** Move beyond static recipe lookup to constrained planning, while addressing data provenance, malformed inputs, and algorithm verification.
-
-`Python` · `JavaScript` · `Route solving` · `Data parsing`
-
-## Engineering practices
-
-Practices I work to make concrete across my projects:
-
-- **Design for failure:** Use health checks, transactions, persisted job progress, and backup / recovery workflows—not just happy-path validation.
-- **Define data and permission boundaries:** Apply credential encryption, log redaction, read-only access, and write confirmation where appropriate, keeping data flows and permissions explainable.
-- **Make delivery verifiable:** Use type checks, unit / regression tests, and CI across different projects, supported by environment requirements, deployment steps, and recovery documentation.
-
-My main implementation areas are **Python services, TypeScript / React interfaces, Rust / Tauri desktop applications, and Kotlin Android development**, with SQLite, PostgreSQL, Docker, and systemd chosen according to storage and deployment needs.
-
-## More projects
-
-<details>
-<summary><b>Explore 12 more projects · AI workflows / Mail services / Network and operations</b></summary>
-
-### AI workflows and integrations
-
-| Project | Focus and implementation |
-| :--- | :--- |
-| [Obsidian AI Writer](https://github.com/ferretgeek/obsidian-ai-writer) | User-selected note context, multiple model protocols, and diff previews before confirmed file writes. An independent derivative of `grok-obsidian`; see the repository NOTICE for attribution. |
-| [Codex Quota Widget](https://github.com/ferretgeek/codex-quota-widget) | Windows overlay showing remaining quota, reset times, and low-quota alerts. |
-| [Codex Multi-Account Quota Overview](https://github.com/ferretgeek/codex-quota-overview) | Import existing login files, inspect account quotas together, and export results. |
-| [CLIProxyAPI Credential Check](https://github.com/ferretgeek/cliproxyapi-credential-check) | Inspect enabled accounts with optional availability and quota probes; distinguish an inventory from a live check. |
-
-### Mail services and authorized access
-
-| Project | Focus and implementation |
-| :--- | :--- |
-| [Domain Mail Inbox](https://github.com/ferretgeek/domain-mail-inbox) | SMTP receiving, an HTTP API, and SQLite storage using the Python standard library, with domain-scoped access and health checks. Receive-only; no outbound mail. |
-| [Outlook Batch Inbox](https://github.com/ferretgeek/outlook-batch-inbox) | Query recent messages and verification codes across authorized mailboxes. |
-| [IMAP Pickup Links](https://github.com/ferretgeek/imap-pickup-links) | Revocable web links that provide a controlled entry point to an existing mailbox. |
-| [iCloud Code Finder](https://github.com/ferretgeek/icloud-code-finder) | Extract verification codes from recent messages in an authorized mailbox. |
-| [Hide My Email Manager](https://github.com/ferretgeek/hide-my-email-manager) | Tags, notes, search, and backups for imported addresses; does not modify their state at Apple. |
-| [Email Alias Generator](https://github.com/ferretgeek/email-alias-generator) | Generate tagged addresses locally in the browser; delivery support depends on the mailbox provider. |
-
-### Network monitoring and operations
-
-| Project | Focus and implementation |
-| :--- | :--- |
-| [Proxy Uptime Monitor](https://github.com/ferretgeek/proxy-uptime-monitor) | Access target pages through proxy nodes and record connectivity and failures over time. |
-| [Palworld Server Panel](https://github.com/ferretgeek/palworld-server-panel) | Manage an existing Linux dedicated server: status, configuration, backups, and updates. |
-
-</details>
-
----
-
-**Want to try a project?** Open its repository for instructions and screenshots, and check **Releases** for published versions. Some projects require building from source or self-hosting.
-
-**Want to discuss implementation or report an issue?** Use the relevant repository's **Issues**. Source code, architecture notes, and tests provide further context for each project.
+<p align="center"><a href="mailto:ferretgeek@vip.qq.com">ferretgeek@vip.qq.com</a> · <a href="https://ferretgeek.github.io/?lang=en">ferretgeek.github.io</a><br><sub>Chinese type: MiSans · Latin type: Google Sans Flex · Images generated by script, stats refreshed daily</sub></p>
