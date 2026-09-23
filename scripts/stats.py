@@ -20,11 +20,12 @@ ROOT = Path(__file__).resolve().parent.parent
 GLYPHS = json.loads((Path(__file__).with_name('glyphs.json')).read_text(encoding='utf-8'))
 OUT = ROOT / 'assets' / 'stats'
 USER = 'ferretgeek'
+EXCLUDE = {USER, f'{USER}.github.io'}  # the profile and website repos are not projects
 
 # Fixed labels. tools/bake_stats.py outlines exactly these strings.
 STRINGS = {
     'zh': {
-        'projects': '开源项目', 'projects_note': '公开仓库，不含主页',
+        'projects': '开源项目', 'projects_note': '不含主页与网站仓库',
         'stars': '获得星标', 'stars_note': '最多：',
         'contrib': '近一年贡献', 'streak_pre': '最长连续 ', 'streak_post': ' 天',
         'since': '始于', 'years_pre': '在 GitHub 上的第 ', 'years_post': ' 年',
@@ -33,7 +34,7 @@ STRINGS = {
         'weekdays': ['一', '三', '五'], 'months': [f'{m}月' for m in range(1, 13)],
     },
     'en': {
-        'projects': 'Open-source projects', 'projects_note': 'Public repositories',
+        'projects': 'Open-source projects', 'projects_note': 'Excluding profile & site',
         'stars': 'Stars earned', 'stars_note': 'Most: ',
         'contrib': 'Contributions', 'streak_pre': 'Longest streak: ', 'streak_post': ' days',
         'since': 'On GitHub since', 'years_pre': 'Year ', 'years_post': ' on GitHub',
@@ -77,7 +78,7 @@ def fetch() -> dict:
 
 
 def summarize(user: dict, today: dt.date) -> dict:
-    repos = [r for r in user['repositories']['nodes'] if r['name'] != USER]
+    repos = [r for r in user['repositories']['nodes'] if r['name'] not in EXCLUDE]
     langs: dict[str, int] = {}
     for r in repos:
         for e in r['languages']['edges']:
