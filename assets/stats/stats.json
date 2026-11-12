@@ -1,44 +1,44 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "projects": 19,
- "stars": 79,
- "forks": 15,
+ "stars": 81,
+ "forks": 16,
  "top_repo": {
   "name": "cliproxyapi-dashboard",
-  "stars": 65
+  "stars": 64
  },
- "contributions": 375,
+ "contributions": 377,
  "longest_streak": 5,
  "since": 2016,
  "year_on_github": 11,
  "languages": [
   {
    "name": "Python",
-   "share": 0.3115803501023777
+   "share": 0.3020957984547342
   },
   {
    "name": "JavaScript",
-   "share": 0.23304679005434406
+   "share": 0.24218868852516928
   },
   {
    "name": "Kotlin",
-   "share": 0.11788796145646369
+   "share": 0.12398170368507401
   },
   {
    "name": "TypeScript",
-   "share": 0.0984385998584659
+   "share": 0.09544211441202309
   },
   {
    "name": "CSS",
-   "share": 0.07246882036229298
+   "share": 0.07427000659463205
   },
   {
    "name": "Rust",
-   "share": 0.04136693120763424
+   "share": 0.04010771574229951
   },
   {
    "name": null,
-   "share": 0.1252105469584214
+   "share": 0.12191397258606781
   }
  ],
  "weeks": [
@@ -1980,6 +1980,16 @@
    [
     "2026-11-10",
     4,
+    1
+   ],
+   [
+    "2026-11-11",
+    0,
+    0
+   ],
+   [
+    "2026-11-12",
+    2,
     1
    ]
   ]
