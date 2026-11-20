@@ -1,44 +1,44 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "projects": 19,
- "stars": 157,
- "forks": 39,
+ "stars": 173,
+ "forks": 47,
  "top_repo": {
   "name": "prokbot-plus",
-  "stars": 88
+  "stars": 104
  },
- "contributions": 396,
+ "contributions": 402,
  "longest_streak": 5,
  "since": 2016,
  "year_on_github": 11,
  "languages": [
   {
    "name": "Python",
-   "share": 0.307106911798515
+   "share": 0.30571527540041676
   },
   {
    "name": "JavaScript",
-   "share": 0.28212640086520935
+   "share": 0.28325530189050446
   },
   {
    "name": "Kotlin",
-   "share": 0.11011464347353049
+   "share": 0.11018507521202348
   },
   {
    "name": "TypeScript",
-   "share": 0.08474961305196761
+   "share": 0.08480382076127461
   },
   {
    "name": "CSS",
-   "share": 0.06636300420623845
+   "share": 0.06640545143769123
   },
   {
    "name": "Rust",
-   "share": 0.035614397381058004
+   "share": 0.035637177129907036
   },
   {
    "name": null,
-   "share": 0.1139250292234811
+   "share": 0.11399789816818238
   }
  ],
  "weeks": [
@@ -1989,6 +1989,11 @@
    ],
    [
     "2026-11-19",
+    6,
+    2
+   ],
+   [
+    "2026-11-20",
     1,
     1
    ]
